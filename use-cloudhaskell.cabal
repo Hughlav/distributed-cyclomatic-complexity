@@ -23,6 +23,11 @@ library
                      , distributed-process
                      , distributed-process-simplelocalnet
                      , github
+                     , text
+                     , process
+                     , directory
+                     , filepath
+                     , temporary
   default-language:    Haskell2010
 
 executable use-cloudhaskell-exe

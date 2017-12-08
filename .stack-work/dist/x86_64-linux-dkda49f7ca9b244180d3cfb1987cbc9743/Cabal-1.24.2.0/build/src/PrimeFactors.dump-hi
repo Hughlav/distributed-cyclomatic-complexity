@@ -1,0 +1,114 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-08 18:31:03.3333206 UTC
+
+interface use-cloudhaskell-0.1.0.0-4Mr8hwszzILAlCZV4cJIEu:PrimeFactors 8002
+  interface hash: 7a0c8cb9a9ca7cc1d60199333c058309
+  ABI hash: c1f120871481ccdfb60d47f067891f42
+  export-list hash: ceba1ed30cebae54c59e4d02e55ea75b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 662888f212cca77fc77a147d036744e5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  PrimeFactors.factors
+  PrimeFactors.numPrimeFactors
+  PrimeFactors.primeFactors
+  PrimeFactors.primes
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+8d808d25c7cd6d6cb13359d63cabe4bf
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   PrimeFactors.$trModule2
+                   PrimeFactors.$trModule1) -}
+8a79f973f6d5db58b5c7ddf0adfc107f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "PrimeFactors"#) -}
+a051ea75bee176ff11057821ac569468
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "use-cloudhaskell-0.1.0.0-4Mr8hwszzILAlCZV4cJIEu"#) -}
+5bb52768619516eb95ef42133fbfe235
+  $wnumPrimeFactors :: GHC.Integer.Type.Integer -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Integer.Type.Integer) ->
+                 case GHC.List.$wlenAcc
+                        @ GHC.Integer.Type.Integer
+                        (PrimeFactors.factors PrimeFactors.primes w)
+                        0# of ww2 { DEFAULT ->
+                 case GHC.Integer.Type.smallInteger
+                        ww2 of ww { GHC.Integer.Type.S# ww1 ->
+                 ww1 } }) -}
+970854f7ed2560fa65e4df01042562ca
+  $wprimes' ::
+    [GHC.Integer.Type.Integer]
+    -> (# GHC.Integer.Type.Integer, [GHC.Integer.Type.Integer] #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+d54b1a6399ca32b9df5fd45adb9cd94a
+  factors ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+730c8acd34a881338b990d009c758533
+  numPrimeFactors ::
+    GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,U>m1, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Integer.Type.Integer) ->
+                 case PrimeFactors.$wnumPrimeFactors w of ww { DEFAULT ->
+                 GHC.Integer.Type.S# ww }) -}
+5e1cfbd54851351dfcbb201e0952f970
+  primeFactors ::
+    GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1,
+     Unfolding: (PrimeFactors.factors PrimeFactors.primes) -}
+26cd2c9334d34a910df6ee9ce42742ba
+  primes :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (case PrimeFactors.$wprimes'
+                        PrimeFactors.primes1 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2 }) -}
+0a37bda8a506da360f2a7aa7938ddedc
+  primes1 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   PrimeFactors.primes3
+                   PrimeFactors.primes2) -}
+7d650848301d67f37603f21a7c63c64f
+  primes2 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (case GHC.Enum.$wenumDeltaInteger
+                        PrimeFactors.primes4
+                        PrimeFactors.primes3 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2 }) -}
+bfee63c9bb7ac5527e92d25048710f21
+  primes3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+e767438e820b99e2a5e3a9ca595004c5
+  primes4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
