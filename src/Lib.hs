@@ -29,10 +29,12 @@ import           PrimeFactors
 import           System.Environment                                 (getArgs)
 import           System.Exit
 import           Gitaccess
+import           Data.ByteString.Lazy hiding (putStrLn)
+--import           Data.ByteString hiding (putStrLn)
 
 -- this is the work we get workers to do. It could be anything we want. To keep things simple, we'll calculate the
 -- number of prime factors for the integer passed.
-doWork :: String -> IO String
+doWork :: String -> IO ByteString
 doWork = workerWork
 
 -- | worker function.

@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-12 19:10:33.042287 UTC
+2017-12-12 21:13:12.028818 UTC
 
 interface usecl_LbyoIXb6p756ZYzHnVxUNm:Lib 7102
-  interface hash: 8040a89d6614c7e569155f02d6dde837
-  ABI hash: efd4e22d78644ae7af2c48ff16f7d5bf
+  interface hash: 3451039aa388ba77f3b2a93147f0143c
+  ABI hash: 5171942b9434cd1de76311d22838836e
   export-list hash: c7c6668eecb8ad9384846036474026f4
   orphan hash: 54432b44f75a96566a50860569055e04
   flag hash: 79b1a83113dabb1892ce091f85035f17
@@ -251,6 +251,8 @@ import  -/  base-4.8.1.0:System.Environment 946ddc2d7c48138bb213316abaff2a8d
 import  -/  base-4.8.1.0:System.Exit 667ccf9b7fe125c4036efb58a244974a
 import  -/  base-4.8.1.0:System.IO d541b8bdf18c04de3ab7ea0277c4eba3
 import  -/  binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary 6f0fa1bb755de49248b7f944b0669130
+import  -/  bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Lazy ebc05917f240e5ff4bf7a3f2db5cbf62
+import  -/  bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Lazy.Internal 50ad92eb5836517cb2e48dd14fd9734d
 import  -/  distributed-process-simplelocalnet-0.2.3.2@distr_7PUDhc2ST5xBOhSjKmmoyu:Control.Distributed.Process.Backend.SimpleLocalnet eccafc918dc9780e67c0cf30b8748524
 import  -/  distributed-static-0.3.8@distr_J7SBnSxTH8p3y1CbcETiNw:Control.Distributed.Static f672cb383375a4e9e45d15c08566a231
 import  -/  distributed-process-0.6.6@distr_L1tyDqPpCb2AodTZ0AJ0pI:Control.Distributed.Process 2f33ad702b9a660282f0ec08817e310c
@@ -267,10 +269,10 @@ import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type bf9b4d13b1dbe96a83786d2e47d2e8c
 import  -/  network-transport-tcp-0.5.1@netwo_AianqpaP9OhAa1lkaIyEz7:Network.Transport.TCP b0410ea68648c9d5400984527d88ca09
 import  -/  rank1dynamic-0.3.3.0@rank1_KPH4Hs53jZH5hccxGyhUAK:Data.Rank1Dynamic 7be680333db323c269477aba9d4c281a
 import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.Class 9605d683dd45bfe8c9f8bdf894951b7c
-import  -/  Gitaccess 92902106ce269cceb0fc3c64fe01bf47
-  exports: e910850a153fd1c39b14ff27f17b571b
-  getCommitList 6d22bc8c1246fb517e8ac6063a85cde7
-  workerWork 8a9d5615e51363be74d7fd00d82720ae
+import  -/  Gitaccess e918b85a2d59d3ac2883dcb7340aba27
+  exports: 8046e7a6ca836ff7da0318a3f317f4a4
+  getCommitList 0130a66ca8973fd9daddcf173bf6989d
+  workerWork 7ce94cd413bfa2aa7eb6e8bef4ae9db6
 import  -/  PrimeFactors d683cfa788f7a2b525c641915dc8be13
   exports: 128430bde06a2b4649be9f847cd3b57a
 b8c362e5c1a05693f24b5e0b1ae2d2d1
@@ -292,7 +294,7 @@ b8c362e5c1a05693f24b5e0b1ae2d2d1
                      @ Control.Distributed.Process.Internal.Types.ProcessId
                      Control.Distributed.Process.Internal.Types.$fBinaryProcessId
                      Control.Distributed.Process.Internal.Types.$fBinaryProcessId) -}
-60f043409070b39284fa77b45e8e46a5
+e218fd446ad4582c1f60753774f613ce
   $smatch1 ::
     Control.Distributed.Process.Serializable.Serializable ()
   {- Unfolding: (Control.Distributed.Process.Serializable.$fSerializablea
@@ -332,11 +334,11 @@ b8c362e5c1a05693f24b5e0b1ae2d2d1
 c7b3b34d8c64f083ff219f42053df9f2
   $smatch14 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Char"#) -}
-820fe84967859ede235caf7af83d080c
+b69b2edbca653edf1e15e469c6aae16f
   $smatch2 :: GHC.Prim.Proxy# () -> Data.Typeable.Internal.TypeRep
   {- Arity: 1, Strictness: <L,A>m,
      Unfolding: InlineRule (1, True, True)
-                (\ wild :: GHC.Prim.Proxy# () -> Lib.$smatch3) -}
+                (\ wild1 :: GHC.Prim.Proxy# () -> Lib.$smatch3) -}
 fc824446cade58b1bf337bcd197d8bba
   $smatch3 :: Data.Typeable.Internal.TypeRep
   {- Strictness: m,
@@ -346,7 +348,7 @@ fc824446cade58b1bf337bcd197d8bba
                    Lib.$smatch_wild
                    (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
                    (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
-0d45eab3d8904b6ebd967d9973c75bbd
+a2b9dfd1c8a51cadbbf3772a16b9a85b
   $smatch5 ::
     Control.Distributed.Process.Serializable.Serializable
       GHC.Base.String
@@ -357,12 +359,12 @@ fc824446cade58b1bf337bcd197d8bba
                      `cast`
                    (Sym (Data.Typeable.Internal.NTCo:Typeable[0]
                              <*>_N <[GHC.Types.Char]>_N))) -}
-8120db2c1024317a5e99180e6145b322
+9a657093c50f50619ad1d9d7f079a617
   $smatch6 ::
     GHC.Prim.Proxy# [GHC.Types.Char] -> Data.Typeable.Internal.TypeRep
   {- Arity: 1, Strictness: <L,A>,
      Unfolding: InlineRule (1, True, True)
-                (\ wild :: GHC.Prim.Proxy# [GHC.Types.Char] -> Lib.$smatch7) -}
+                (\ wild1 :: GHC.Prim.Proxy# [GHC.Types.Char] -> Lib.$smatch7) -}
 f63bcb38b97d597bcddf43b1473199d8
   $smatch7 :: Data.Typeable.Internal.TypeRep
   {- Unfolding: (case Lib.$smatch_w1 of wild2 {
@@ -448,13 +450,13 @@ ddd3bfb552ccde0db6dab933f59f186e
      Unfolding: (GHC.Fingerprint.Type.Fingerprint
                    __word 16275961958878852713
                    __word 3578558998586661682) -}
-b36d2a4e32a82ced3f069ea79af69206
+b515c8e7024f0e42833cfbe622a7cb3e
   $stoDynamic15 :: [Data.Typeable.Internal.TypeRep]
   {- Unfolding: (GHC.Types.:
                    @ Data.Typeable.Internal.TypeRep
                    Lib.$stoDynamic16
                    (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
-b138d28290d74cd1bd99fad113d20ba7
+e6b6ca53701418a9db71159309382ba9
   $stoDynamic16 :: Data.Typeable.Internal.TypeRep
   {- Unfolding: (case Lib.$stoDynamic_w3 of wild2 {
                    []
@@ -498,11 +500,11 @@ b138d28290d74cd1bd99fad113d20ba7
                                         go2 :: [Data.Typeable.Internal.TypeRep]
                                                -> [GHC.Fingerprint.Type.Fingerprint]
                                           {- Arity: 1, Strictness: <S,1*U> -}
-                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
-                                          case ds of wild3 {
+                                        = \ ds1 :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds1 of wild3 {
                                             [] -> z4
                                             : y ys
-                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt6 dt7 ds1 ds2 ds3 ->
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt6 dt7 ds2 ds3 ds4 ->
                                                GHC.Types.:
                                                  @ GHC.Fingerprint.Type.Fingerprint
                                                  (GHC.Fingerprint.Type.Fingerprint dt6 dt7)
@@ -584,7 +586,7 @@ e9ed3a1d67b0b4ada3758676979a7f82
                    @ Data.Typeable.Internal.TypeRep
                    (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
                    Lib.$stoDynamic10) -}
-43995c2aa3cb8b5b2d0017bc154a2106
+9406ffb61439b6dd65b2d60847903c7b
   $stoDynamic_w2 :: [Data.Typeable.Internal.TypeRep]
   {- Unfolding: (GHC.Base.++
                    @ Data.Typeable.Internal.TypeRep
@@ -673,7 +675,7 @@ d41d53124a8e13cd78a431e482cb8fbf
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U> -}
-04b1492af4234879a7f39ccd6b3c1d4b
+f2df0520a3368ab622a9857e482bfde9
   worker ::
     (Control.Distributed.Process.Internal.Types.ProcessId,
      Control.Distributed.Process.Internal.Types.ProcessId)
@@ -694,7 +696,7 @@ d41d53124a8e13cd78a431e482cb8fbf
                                          <GHC.Types.IO>_R
                                          <()>_N))
                                (Sym (Control.Distributed.Process.Internal.Types.NTCo:Process[0]) <()>_N))) -}
-c191923bf2aecc72a95cf1cf51c83863
+80b5704c6753f84c26e38490cbc4003c
   worker1 ::
     (Control.Distributed.Process.Internal.Types.ProcessId,
      Control.Distributed.Process.Internal.Types.ProcessId)
@@ -709,7 +711,7 @@ c191923bf2aecc72a95cf1cf51c83863
                          Control.Distributed.Process.Internal.Types.ProcessId)
                    w1 :: Control.Distributed.Process.Internal.Types.LocalProcess
                    w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 case w of ww { (,) ww1 ww2 -> Lib.$wa ww1 ww2 w1 w2 }) -}
+                 case w of ww { (,) ww2 ww6 -> Lib.$wa ww2 ww6 w1 w2 }) -}
 "SPEC/Lib $fBinary(,) @ ProcessId @ ProcessId" [ALWAYS] forall $dBinary :: Data.Binary.Class.Binary
                                                                              Control.Distributed.Process.Internal.Types.ProcessId
                                                                $dBinary1 :: Data.Binary.Class.Binary

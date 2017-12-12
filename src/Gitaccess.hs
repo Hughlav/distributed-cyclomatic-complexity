@@ -22,9 +22,10 @@ import System.Directory
 import System.Process
 import System.IO
 import GHC.Generics
-import Data.ByteString.Lazy.Char8 as B8 hiding (putStrLn, map, words, hGetContents)
+import Data.ByteString.Lazy.Char8 as B8 hiding (putStrLn, map, words)
 import qualified Data.ByteString.Lazy as B
 import Data.Aeson
+import Data.Aeson.TH (deriveJSON, defaultOptions)
 import Control.Monad.IO.Class
 import Data.Maybe
 
@@ -32,14 +33,15 @@ data Commits = Commits {
       block :: Block
     , path  :: !Text
     , types :: !Text
-    } deriving (Generic, FromJSON, Show)
+    } deriving (Generic, FromJSON, ToJSON, Show)
 
 data Block = Block {
       complexity :: Int
     , name :: !Text
     , lineno :: Int
     , col :: Int
-} deriving (Generic, FromJSON, Show)
+} deriving (Generic, FromJSON, ToJSON, Show)
+
 
 -- instance FromJSON Commits
 -- instance ToJSON Commits
@@ -47,10 +49,10 @@ data Block = Block {
 repository :: Name Repo
 repository = "Distributed-file-system"
 
--- main :: IO ()
--- main = do
---     shas <- getCommitList
---     putStrLn (show shas)
+main :: IO ()
+main = do
+    shas <- getCommitList
+    putStrLn (show shas)
 --     getRepo
 --     getCommit "cf609c0dd7f2ca4da9cf85a7b11babf24c0a1832"
 --     putStrLn "got that commit"
@@ -59,7 +61,7 @@ repository = "Distributed-file-system"
 
 
 
-workerWork :: String -> IO String
+workerWork :: String -> IO ByteString
 workerWork commit = do
     getCommit commit
     runArgon "Distributed-file-system"
@@ -77,7 +79,7 @@ getCommitList = do
             let tmp = map formatCommit (toList commits) --intercalate "\n" $
             let shas = map parseString (tmp)
             let tmper = map GitHub.Internal.Prelude.pack shas
-            let newShas = map (stripSuffix "\"")(tmper)
+            let newShas = map (Data.Text.stripSuffix "\"")(tmper)
             let shaList = map fromJust newShas
             let final = map Data.Text.unpack (shaList)
             return final
@@ -100,16 +102,16 @@ getCommit :: String -> IO String
 getCommit commit = do
     readCreateProcess ((proc "git" ["reset","--hard",commit]){ cwd = Just "Distributed-file-system"}) ""
 
-runArgon :: String -> IO String
+runArgon :: String -> IO ByteString
 runArgon filePath = do
     let command = "exec -- argon --json "++filePath
     (_,Just out, _, procHandle) <- createProcess (proc "stack" $ words command) { std_out = CreatePipe }
     waitForProcess procHandle
-    hGetContents out
+    B8.hGetContents out
 
--- decodeJSON :: String ->IO ()
--- decodeJSON result = do
---     d <- (eitherDecode (B8.pack result)) :: IO (Either String Commits)
---     case d of
---         Left err -> putStrLn err
---         Right ps -> putStrLn (show d)
+decodeJSON :: ByteString -> IO()
+decodeJSON result = do
+    let d = (decode result) :: Maybe Commits
+    case d of
+        Nothing -> putStrLn "err"
+        Just m -> print d
