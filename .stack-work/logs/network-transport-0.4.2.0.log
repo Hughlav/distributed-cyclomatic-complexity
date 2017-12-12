@@ -1,0 +1,25 @@
+Configuring network-transport-0.4.2.0...
+Building network-transport-0.4.2.0...
+Preprocessing library network-transport-0.4.2.0...
+[1 of 3] Compiling Network.Transport.Internal ( src/Network/Transport/Internal.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Network/Transport/Internal.o )
+
+src/Network/Transport/Internal.hs:81:25: Warning:
+    In the use of ‘BSI.inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+
+src/Network/Transport/Internal.hs:98:25: Warning:
+    In the use of ‘BSI.inlinePerformIO’
+    (imported from Data.ByteString.Internal):
+    Deprecated: "If you think you know what you are doing, use 'unsafePerformIO'. If you are sure you know what you are doing, use 'unsafeDupablePerformIO'. If you enjoy sharing an address space with a malevolent agent of chaos, try 'accursedUnutterablePerformIO'."
+[2 of 3] Compiling Network.Transport ( src/Network/Transport.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Network/Transport.o )
+
+src/Network/Transport.hs:31:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[3 of 3] Compiling Network.Transport.Util ( src/Network/Transport/Util.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Network/Transport/Util.o )
+In-place registering network-transport-0.4.2.0...
+Installing library in
+/Users/HughLavery/.stack/snapshots/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/lts-3.22/7.10.2/lib/x86_64-linux-ghc-7.10.2/network-transport-0.4.2.0-0kMRXlpWqfq3a4vjsCJBlr
+Registering network-transport-0.4.2.0...

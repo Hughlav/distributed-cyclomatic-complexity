@@ -1,0 +1,27 @@
+Configuring argon-0.4.1.0...
+Preprocessing library argon-0.4.1.0...
+[ 1 of 11] Compiling Argon.SYB.Utils  ( src/Argon/SYB/Utils.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/SYB/Utils.o )
+[ 2 of 11] Compiling Argon.Preprocess ( src/Argon/Preprocess.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Preprocess.o )
+[ 3 of 11] Compiling Argon.Walker     ( src/Argon/Walker.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Walker.o )
+[ 4 of 11] Compiling Argon.Loc        ( src/Argon/Loc.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Loc.o )
+[ 5 of 11] Compiling Argon.Types      ( src/Argon/Types.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Types.o )
+[ 6 of 11] Compiling Argon.Formatters ( src/Argon/Formatters.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Formatters.o )
+[ 7 of 11] Compiling Argon.Visitor    ( src/Argon/Visitor.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Visitor.o )
+[ 8 of 11] Compiling Argon.Cabal      ( src/Argon/Cabal.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Cabal.o )
+[ 9 of 11] Compiling Argon.Results    ( src/Argon/Results.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Results.o )
+[10 of 11] Compiling Argon.Parser     ( src/Argon/Parser.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon/Parser.o )
+
+src/Argon/Parser.hs:5:1: Warning:
+    The import of ‘Data.List’ is redundant
+      except perhaps to import instances from ‘Data.List’
+    To import instances alone, use: import Data.List()
+[11 of 11] Compiling Argon            ( src/Argon.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Argon.o )
+In-place registering argon-0.4.1.0...
+Preprocessing executable 'argon' for argon-0.4.1.0...
+[1 of 1] Compiling Main             ( app/Main.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/argon/argon-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/argon/argon ...
+Installing library in /Users/HughLavery/Documents/College/Year
+4/CS4400/distributed-cyclomatic-complexity/.stack-work/install/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/lts-3.22/7.10.2/lib/x86_64-linux-ghc-7.10.2/argon-0.4.1.0-G2DWL1Qy2oRCZZGJTIvhgg
+Installing executable(s) in /Users/HughLavery/Documents/College/Year
+4/CS4400/distributed-cyclomatic-complexity/.stack-work/install/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/lts-3.22/7.10.2/bin
+Registering argon-0.4.1.0...

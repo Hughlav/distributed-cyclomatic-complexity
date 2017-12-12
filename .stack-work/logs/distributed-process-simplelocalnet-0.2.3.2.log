@@ -1,0 +1,49 @@
+Configuring distributed-process-simplelocalnet-0.2.3.2...
+Building distributed-process-simplelocalnet-0.2.3.2...
+Preprocessing library distributed-process-simplelocalnet-0.2.3.2...
+[1 of 2] Compiling Control.Distributed.Process.Backend.SimpleLocalnet.Internal.Multicast ( src/Control/Distributed/Process/Backend/SimpleLocalnet/Internal/Multicast.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Control/Distributed/Process/Backend/SimpleLocalnet/Internal/Multicast.o )
+
+src/Control/Distributed/Process/Backend/SimpleLocalnet/Internal/Multicast.hs:5:1: Warning:
+    The import of ‘Data.Function’ is redundant
+      except perhaps to import instances from ‘Data.Function’
+    To import instances alone, use: import Data.Function()
+
+src/Control/Distributed/Process/Backend/SimpleLocalnet/Internal/Multicast.hs:22:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[2 of 2] Compiling Control.Distributed.Process.Backend.SimpleLocalnet ( src/Control/Distributed/Process/Backend/SimpleLocalnet.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Control/Distributed/Process/Backend/SimpleLocalnet.o )
+
+src/Control/Distributed/Process/Backend/SimpleLocalnet.hs:105:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Control/Distributed/Process/Backend/SimpleLocalnet.hs:259:3: Warning:
+    In the use of ‘bracket’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.bracket instead"
+
+src/Control/Distributed/Process/Backend/SimpleLocalnet.hs:329:16: Warning:
+    In the use of ‘try’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.mask_ instead"
+
+src/Control/Distributed/Process/Backend/SimpleLocalnet.hs:333:26: Warning:
+    In the use of ‘try’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.mask_ instead"
+
+src/Control/Distributed/Process/Backend/SimpleLocalnet.hs:351:3: Warning:
+    In the use of ‘bracket’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.bracket instead"
+
+src/Control/Distributed/Process/Backend/SimpleLocalnet.hs:398:37: Warning:
+    In the use of ‘finally’
+    (imported from Control.Distributed.Process, but defined in Control.Distributed.Process.Internal.Primitives):
+    Deprecated: "Use Control.Monad.Catch.finally instead"
+In-place registering distributed-process-simplelocalnet-0.2.3.2...
+Installing library in /Users/HughLavery/Documents/College/Year
+4/CS4400/distributed-cyclomatic-complexity/.stack-work/install/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/lts-3.22/7.10.2/lib/x86_64-linux-ghc-7.10.2/distributed-process-simplelocalnet-0.2.3.2-7PUDhc2ST5xBOhSjKmmoyu
+Registering distributed-process-simplelocalnet-0.2.3.2...

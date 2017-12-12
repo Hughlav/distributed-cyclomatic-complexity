@@ -1,0 +1,22 @@
+Configuring pipes-bytestring-2.1.1...
+Building pipes-bytestring-2.1.1...
+Preprocessing library pipes-bytestring-2.1.1...
+[1 of 1] Compiling Pipes.ByteString ( src/Pipes/ByteString.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Pipes/ByteString.o )
+
+src/Pipes/ByteString.hs:144:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+
+src/Pipes/ByteString.hs:392:1: Warning: Tab character
+
+src/Pipes/ByteString.hs:646:1: Warning: Tab character
+
+src/Pipes/ByteString.hs:333:11: Warning:
+    Rule "p >-> toHandle h" may never fire
+      because ‘>->’ might inline first
+    Probable fix: add an INLINE[n] or NOINLINE[n] pragma on ‘>->’
+In-place registering pipes-bytestring-2.1.1...
+Installing library in
+/Users/HughLavery/.stack/snapshots/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/lts-3.22/7.10.2/lib/x86_64-linux-ghc-7.10.2/pipes-bytestring-2.1.1-DRLVw1NpVICDlgJuVnnAlQ
+Registering pipes-bytestring-2.1.1...

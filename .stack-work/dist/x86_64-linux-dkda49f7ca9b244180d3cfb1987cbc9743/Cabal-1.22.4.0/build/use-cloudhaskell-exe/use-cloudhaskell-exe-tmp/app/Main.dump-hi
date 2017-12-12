@@ -1,0 +1,268 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-12 19:10:37.305529 UTC
+
+interface main@main:Main 7102
+  interface hash: 7be12a94573b21e7aa88915cb4a58825
+  ABI hash: 3932a928a0ac32ce4851e1c612d431fa
+  export-list hash: ca6e0a79a6faf6229ac341139bfe72cc
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: b45da84efbdc3f7d5e153d2bd6c75e9e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: StateVar-1.1.0.2@State_01D7wYOBNQ78BZXP74Y9W2
+                      adjunctions-4.2.2@adjun_7RfR0mwcgjbEmWiYqgTCIy
+                      aeson-compat-0.3.0.0@aeson_F8yb4OlqcRpGybntuazJ0r
+                      aeson-0.8.0.2@aeson_JS7Vm1P5aVjG4blKqZGyfh
+                      array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      asn1-encoding-0.9.3@asn1e_JfYetfRcry6BBMRWZF3fSE
+                      asn1-parse-0.9.4@asn1p_ElLYccgyBxJ3AVQaDy20h7
+                      asn1-types-0.3.2@asn1t_GG4oGXNEyxk3ihDt5jbOhG
+                      async-2.0.2@async_7uoTe13JDWV6U6vlyYGaII
+                      attoparsec-0.12.1.6@attop_8slB1TUPc0y9Z1f4ky3i2E base-4.8.1.0
+                      base64-bytestring-1.0.0.1@base6_5ombtuUXex39dVe2nth8cH
+                      base-compat-0.9.3@basec_J3zsNd9QkIZGJryjIcqJxR
+                      basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC
+                      base-orphans-0.4.5@baseo_Ej1FQLyaIwy6HIsiN3gHe9
+                      bifunctors-5@bifun_A7Bbo7S8yoO6nbdYinwXTI
+                      binary-orphans-0.1.3.0@binar_1qDCqRlCD9XKVVqB0weOWP
+                      binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      blaze-builder-0.4.0.1@blaze_Fih87bxtdS7AuyTDTqjEax
+                      byteable-0.1.1@bytea_F2pcQljAfpbDG2panTEyo8
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      case-insensitive-1.2.0.5@casei_2v31fhDBMauKZYf5kDjlgw
+                      cereal-0.4.1.1@cerea_LMaR4P6lFvNJtmY00msKYH
+                      comonad-4.2.7.2@comon_3qq1oi0moCkLkaCeMPf0Sy
+                      connection-0.2.5@conne_0bxk9lk9cJnAzKHTuAbw3a
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      contravariant-1.3.3@contr_28t0dWooTZ7Clg4KmeuMWA
+                      cookie-0.4.1.6@cooki_DY4AaOLRhxlAaogZkCFNGA
+                      cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa
+                      data-accessor-0.2.2.6@dataa_EJ37ALHEezZ0CHUdgdraLT
+                      data-default-class-0.0.1@datad_CgDdtafiXY68XlqDb5IqXw
+                      deepseq-generics-0.1.1.2@deeps_DEEECRcRDqs7mEZKKfUYi6
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      directory-1.2.2.0@direc_KowvXytSqazBcvN7MGpFtg
+                      distributed-process-simplelocalnet-0.2.3.2@distr_7PUDhc2ST5xBOhSjKmmoyu
+                      distributive-0.4.4@distr_DtmCggRmFF9KhnqzzbElBb
+                      distributed-static-0.3.8@distr_J7SBnSxTH8p3y1CbcETiNw
+                      distributed-process-0.6.6@distr_L1tyDqPpCb2AodTZ0AJ0pI
+                      dlist-0.7.1.2@dlist_7AixcwRWCwX32HiPCcE7zz
+                      errors-2.0.1@error_BbQDeZg9K7NILeiAZIGZNr
+                      exceptions-0.8.0.2@excep_DxmHQqAeYkJ0KUsVVnEGIO
+                      filepath-1.4.0.0@filep_KsGE6pHE5eZHSN90ZVax6A
+                      foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8
+                      free-4.12.1@free_9a92HYkdANYCdZdipwGzq6 ghc-prim-0.4.0.0
+                      github-0.18@githu_8rYTIklCOU9AvjOwlVUaam
+                      hashable-1.2.3.3@hasha_Fu46I2eA9YPGrMUpXqnAaw
+                      hourglass-0.2.9@hourg_6Wf2z6eXMVzIFxt1igqsEA
+                      http-client-0.4.26.2@httpc_8SbjE1EjIKt5XVqzwLWSPB
+                      http-client-tls-0.2.2@httpc_IZXyKr3PGqI3FWd24WjQKT
+                      http-link-header-1.0.3@httpl_9brAU5YONTv6INKmLzuu3G
+                      http-types-0.8.6@httpt_7CG1ByUKFZrDAsGXeCCjB6 integer-gmp-1.0.0.0
+                      iso8601-time-0.1.4@iso86_JkWJeNgLZSTD7dwC6pJ7DN
+                      kan-extensions-4.2.3@kanex_2ZpTzrZnJ0a4s6YCzwRfOt
+                      keys-3.10.2@keys_3qHxVacLjKyDHOSm4rxTqA
+                      memory-0.14.8@memor_CWkQmvae6UVFtQnQdMVk6H
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      network-transport-0.4.2.0@netwo_0kMRXlpWqfq3a4vjsCJBlr
+                      network-multicast-0.1.0@netwo_5bwZOp6oVXBEbRpgvw0a5H
+                      network-transport-tcp-0.5.1@netwo_AianqpaP9OhAa1lkaIyEz7
+                      network-2.6.2.1@netwo_F6mK9sCIw3M5SbZMt2lUQE
+                      network-uri-2.6.0.3@netwo_FHk2YbWKTZ5KNAEOkHNDj0
+                      parsec-3.1.9@parse_AqYX0bfDxT5E4cHIEfeJIN
+                      pem-0.2.2@pem_FobxOIdj6uGIHonZNFATO6
+                      pointed-4.2.0.2@point_3zRT68rsfsk7Vmp9hWIR2b
+                      prelude-extras-0.4.0.2@prelu_57eavILAbKD5CaKv31zEDY
+                      pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR
+                      primitive-0.6.1.0@primi_5Jnw7oEuYtM9dmKXelGXVb
+                      process-1.2.3.0@proce_FLTz0SLwyG6LJUpZ52HjkU
+                      profunctors-5.1.2@profu_LK0yMCdPm6HBYBq6RbDkNO
+                      random-1.1@rando_1z8Ujelqc6aKgvPnbRUKkP
+                      rank1dynamic-0.3.3.0@rank1_KPH4Hs53jZH5hccxGyhUAK
+                      scientific-0.3.4.4@scien_3wyQhsIn3IzCO2Fl73SRM1
+                      semigroups-0.16.2.2@semig_6MX8imPHYREIpHnyu9xKvS
+                      semigroupoids-5.0.0.4@semig_Df9Hse1MsPdDCMbhiVWUAa
+                      socks-0.5.4@socks_9FgpVcsLUOt9Bxui5SOHLA
+                      stm-2.4.4.1@stm_1j4HkbCZte434brW1xp4L8
+                      streaming-commons-0.1.15@strea_KvpaXIJ1KLqEiEA6O66H7g
+                      syb-0.5.1@syb_8qmIMcBFhWM7BKRUTFb5M4
+                      tagged-0.8.2@tagge_4zanMqQLQHpBO0ZYm7KGkc template-haskell-2.10.0.0
+                      text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG
+                      time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH
+                      tls-1.3.5@tls_CfdZFJ9ykZr4E1Z9kkKw9N
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      unix-2.7.1.0@unix_A3WgcI5QiHK4PDo4jSYdwQ
+                      unordered-containers-0.2.5.1@unord_GEo5atLhXsqD6lKQtRnTup
+                      use-cloudhaskell-0.1.0.0@usecl_LbyoIXb6p756ZYzHnVxUNm
+                      vector-instances-3.3.1@vecto_0RBux1mNjSWCNzdIh7YW7h
+                      vector-binary-instances-0.2.1.0@vecto_4f6uxQmtb0E11de33Dn7EJ
+                      vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ
+                      x509-1.6.2@x509_8ZNHEQ0XZOQ1VAUdvnD0a4
+                      x509-store-1.6.1@x509s_0zX7HhT89bB1w5aw3cuZkW
+                      x509-system-1.6.3@x509s_BwGbbLDEI09384apXIO3PK
+                      x509-validation-1.6.5@x509v_IuJr0McXrSR8WQUrapyo1C
+                      zlib-0.5.4.2@zlib_7EfFFsXSCF6JCVS3xlYBS8
+orphans: aeson-compat-0.3.0.0@aeson_F8yb4OlqcRpGybntuazJ0r:Data.Aeson.Compat
+         aeson-0.8.0.2@aeson_JS7Vm1P5aVjG4blKqZGyfh:Data.Aeson.Types.Generic
+         aeson-0.8.0.2@aeson_JS7Vm1P5aVjG4blKqZGyfh:Data.Aeson.Types.Instances
+         attoparsec-0.12.1.6@attop_8slB1TUPc0y9Z1f4ky3i2E:Data.Attoparsec.ByteString.Char8
+         attoparsec-0.12.1.6@attop_8slB1TUPc0y9Z1f4ky3i2E:Data.Attoparsec.Text.Internal
+         base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Block
+         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.UArray.Base
+         binary-orphans-0.1.3.0@binar_1qDCqRlCD9XKVVqB0weOWP:Data.Binary.Orphans
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         hashable-1.2.3.3@hasha_Fu46I2eA9YPGrMUpXqnAaw:Data.Hashable.Generic
+         http-client-0.4.26.2@httpc_8SbjE1EjIKt5XVqzwLWSPB:Network.HTTP.Client.Request
+         network-2.6.2.1@netwo_F6mK9sCIw3M5SbZMt2lUQE:Network.Socket
+         network-2.6.2.1@netwo_F6mK9sCIw3M5SbZMt2lUQE:Network.Socket.Types
+         stm-2.4.4.1@stm_1j4HkbCZte434brW1xp4L8:Control.Monad.STM
+         syb-0.5.1@syb_8qmIMcBFhWM7BKRUTFb5M4:Data.Generics.Instances
+         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text
+         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Lazy
+         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Show
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.Format.Parse
+         time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+         vector-instances-3.3.1@vecto_0RBux1mNjSWCNzdIh7YW7h:Data.Vector.Instances
+         vector-binary-instances-0.2.1.0@vecto_4f6uxQmtb0E11de33Dn7EJ:Data.Vector.Binary
+         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Fusion.Stream
+         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Unboxed
+family instance modules: adjunctions-4.2.2@adjun_7RfR0mwcgjbEmWiYqgTCIy:Data.Functor.Rep
+                         attoparsec-0.12.1.6@attop_8slB1TUPc0y9Z1f4ky3i2E:Data.Attoparsec.Internal.Types
+                         base-4.8.1.0:Control.Applicative base-4.8.1.0:Data.Either
+                         base-4.8.1.0:Data.Functor.Identity base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:Data.Void
+                         base-4.8.1.0:GHC.Exts base-4.8.1.0:GHC.Generics
+                         base-4.8.1.0:GHC.TypeLits
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Block.Base
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.BoxedArray
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Compat.Semigroup
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Monad
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.MutableBuilder
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Nat
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.NonEmpty
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Numerical.Subtractive
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.String
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.String.Encoding.ASCII7
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.String.Encoding.UTF16
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.String.Encoding.UTF32
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Types.AsciiString
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Types.OffsetSize
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.UArray.Base
+                         basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.UTF8.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Blake2
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Blake2b
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Blake2bp
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Blake2s
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Blake2sp
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Keccak
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.MD2
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.MD4
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.MD5
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.RIPEMD160
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.SHA1
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.SHA224
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.SHA256
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.SHA3
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.SHA384
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.SHA512
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.SHA512t
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.SHAKE
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Skein256
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Skein512
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Tiger
+                         cryptonite-0.24@crypt_1xhteB9tuui9XGgo8oxOQa:Crypto.Hash.Whirlpool
+                         distributed-process-0.6.6@distr_L1tyDqPpCb2AodTZ0AJ0pI:Control.Distributed.Process.Internal.Types
+                         distributed-process-0.6.6@distr_L1tyDqPpCb2AodTZ0AJ0pI:Control.Distributed.Process.Management.Internal.Table
+                         distributed-process-0.6.6@distr_L1tyDqPpCb2AodTZ0AJ0pI:Control.Distributed.Process.Management.Internal.Trace.Types
+                         distributed-process-0.6.6@distr_L1tyDqPpCb2AodTZ0AJ0pI:Control.Distributed.Process.Management.Internal.Types
+                         dlist-0.7.1.2@dlist_7AixcwRWCwX32HiPCcE7zz:Data.DList
+                         foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8:Foundation.Array.Bitmap
+                         foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8:Foundation.Array.Chunked.Unboxed
+                         foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8:Foundation.Collection.Buildable
+                         foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8:Foundation.Collection.Element
+                         foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8:Foundation.Collection.Keyed
+                         foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8:Foundation.Collection.Mutable
+                         foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8:Foundation.Tuple
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Auth
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Activities
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Comments
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Content
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Definitions
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.DeployKeys
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Events
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Gists
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.GitData
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Id
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Issues
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Milestone
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Name
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Options
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.PullRequests
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Releases
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Repos
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Request
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Reviews
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Search
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Statuses
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Teams
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.URL
+                         github-0.18@githu_8rYTIklCOU9AvjOwlVUaam:GitHub.Data.Webhooks
+                         http-client-0.4.26.2@httpc_8SbjE1EjIKt5XVqzwLWSPB:Network.HTTP.Client
+                         keys-3.10.2@keys_3qHxVacLjKyDHOSm4rxTqA:Data.Key
+                         network-uri-2.6.0.3@netwo_FHk2YbWKTZ5KNAEOkHNDj0:Network.URI
+                         pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.1.0@primi_5Jnw7oEuYtM9dmKXelGXVb:Control.Monad.Primitive
+                         semigroups-0.16.2.2@semig_6MX8imPHYREIpHnyu9xKvS:Data.List.NonEmpty
+                         semigroups-0.16.2.2@semig_6MX8imPHYREIpHnyu9xKvS:Data.Semigroup
+                         tagged-0.8.2@tagge_4zanMqQLQHpBO0ZYm7KGkc:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text
+                         text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_GEo5atLhXsqD6lKQtRnTup:Data.HashMap.Base
+                         unordered-containers-0.2.5.1@unord_GEo5atLhXsqD6lKQtRnTup:Data.HashSet
+                         use-cloudhaskell-0.1.0.0@usecl_LbyoIXb6p756ZYzHnVxUNm:Gitaccess
+                         vector-instances-3.3.1@vecto_0RBux1mNjSWCNzdIh7YW7h:Data.Vector.Instances
+                         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector
+                         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Primitive
+                         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Storable
+                         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Unboxed
+                         vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Unboxed.Base
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  use-cloudhaskell-0.1.0.0@usecl_LbyoIXb6p756ZYzHnVxUNm:Lib efd4e22d78644ae7af2c48ff16f7d5bf
+02c9ef289a6a18c930f362b08240f4fb
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Lib.someFunc1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+eb3ff78fad6ad3f1ad7f8097cdebc2f9
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Lib.someFunc1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

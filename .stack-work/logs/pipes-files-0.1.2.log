@@ -1,0 +1,32 @@
+Configuring pipes-files-0.1.2...
+Building pipes-files-0.1.2...
+Preprocessing library pipes-files-0.1.2...
+[1 of 3] Compiling Pipes.Files.Types ( Pipes/Files/Types.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Pipes/Files/Types.o )
+[2 of 3] Compiling Pipes.Files.Directory ( Pipes/Files/Directory.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Pipes/Files/Directory.o )
+[3 of 3] Compiling Pipes.Files      ( Pipes/Files.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Pipes/Files.o )
+Helper.c: In function ‘__hscore_d_namlen’:
+
+Helper.c:15:3:
+     warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+       return strlen(d->d_name);
+       ^
+
+Helper.c:15:10:
+     warning: incompatible implicit declaration of built-in function ‘strlen’ [enabled by default]
+       return strlen(d->d_name);
+              ^
+Helper.c: In function ‘__hscore_d_namlen’:
+
+Helper.c:15:3:
+     warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+       return strlen(d->d_name);
+       ^
+
+Helper.c:15:10:
+     warning: incompatible implicit declaration of built-in function ‘strlen’ [enabled by default]
+       return strlen(d->d_name);
+              ^
+In-place registering pipes-files-0.1.2...
+Installing library in /Users/HughLavery/Documents/College/Year
+4/CS4400/distributed-cyclomatic-complexity/.stack-work/install/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/lts-3.22/7.10.2/lib/x86_64-linux-ghc-7.10.2/pipes-files-0.1.2-5FbfDRCP4N38yDuve3WjhV
+Registering pipes-files-0.1.2...

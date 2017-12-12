@@ -1,0 +1,97 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-12 18:12:04.272134 UTC
+
+interface usecl_LbyoIXb6p756ZYzHnVxUNm:PrimeFactors 7102
+  interface hash: 14dab27782f298e3cbcd275d9c9bf28c
+  ABI hash: d683cfa788f7a2b525c641915dc8be13
+  export-list hash: 128430bde06a2b4649be9f847cd3b57a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 56b9a755d22be00f2eba50f3628a69c7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  PrimeFactors.factors
+  PrimeFactors.numPrimeFactors
+  PrimeFactors.primeFactors
+  PrimeFactors.primes
+module dependencies:
+package dependencies: base-4.8.1.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:GHC.Generics
+import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.List f31ed8784b3e05f1397195751f7d74ea
+import  -/  base-4.8.1.0:GHC.Real 4c3b525ecbd4d62bb287aec36d4c2f0d
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type bf9b4d13b1dbe96a83786d2e47d2e8ca
+88bfd2f5ab146c20f1287eb96d93dbce
+  $wnumPrimeFactors :: GHC.Integer.Type.Integer -> GHC.Prim.Int#
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ w :: GHC.Integer.Type.Integer ->
+                 case GHC.List.$wlenAcc
+                        @ GHC.Integer.Type.Integer
+                        (PrimeFactors.factors PrimeFactors.primes w)
+                        0 of ww2 { DEFAULT ->
+                 case GHC.Integer.Type.smallInteger
+                        ww2 of ww { GHC.Integer.Type.S# ww1 ->
+                 ww1 } }) -}
+668dab77d1ca80c105d4d246ea5a4801
+  $wprimes' ::
+    [GHC.Integer.Type.Integer]
+    -> (# GHC.Integer.Type.Integer, [GHC.Integer.Type.Integer] #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+8f69feb6fbac64f174dfef96a770c20b
+  factors ::
+    [GHC.Integer.Type.Integer]
+    -> GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 2, Strictness: <S,1*U><S,U> -}
+5cd4fd428cd2b9307c15bf6dbe37a119
+  numPrimeFactors ::
+    GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,U>m1, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: GHC.Integer.Type.Integer ->
+                 case PrimeFactors.$wnumPrimeFactors w of ww { DEFAULT ->
+                 GHC.Integer.Type.S# ww }) -}
+30202377d9cfadbbcd3be511527e2d2e
+  primeFactors ::
+    GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
+  {- Arity: 1,
+     Unfolding: (PrimeFactors.factors PrimeFactors.primes) -}
+f6a57595ed359ec583c438bc4aaf1f38
+  primes :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (case PrimeFactors.$wprimes'
+                        PrimeFactors.primes1 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2 }) -}
+f97b0dcb7a6d18859fd7ca6ed2fd93f6
+  primes1 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   PrimeFactors.primes3
+                   PrimeFactors.primes2) -}
+6511bfd96fa3c2280e26b4118a0e1d4c
+  primes2 :: [GHC.Integer.Type.Integer]
+  {- Unfolding: (case GHC.Enum.$wenumDeltaInteger
+                        PrimeFactors.primes4
+                        PrimeFactors.primes3 of ww { (#,#) ww1 ww2 ->
+                 GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2 }) -}
+7d121bb8ea85d82f9280ebd7910e43d5
+  primes3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 2) -}
+fc75b03933a144a845266640f108e709
+  primes4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (__integer 3) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

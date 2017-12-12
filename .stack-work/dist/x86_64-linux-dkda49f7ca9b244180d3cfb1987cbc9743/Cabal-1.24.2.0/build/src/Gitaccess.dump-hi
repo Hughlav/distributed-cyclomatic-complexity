@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-08 18:46:08.8332674 UTC
+2017-12-12 13:03:35.421208495 UTC
 
 interface use-cloudhaskell-0.1.0.0-4Mr8hwszzILAlCZV4cJIEu:Gitaccess 8002
-  interface hash: 6e6fe662652b405d95986774aa82070e
-  ABI hash: 4b0639d9163a1eee1756cf0da4ae38ad
-  export-list hash: f0e9b42c6528dd2ea15f6bf72d7f17ee
+  interface hash: 23e6295c6630a6c18ff7c60d6709cebb
+  ABI hash: 9decd37cdd5847a578e6b3caaa53bdad
+  export-list hash: 03ce9b14f54e19f5f281dca09cf389fe
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 5ea037f40af9dadb2f473efa664b4581
   sig of: Nothing
@@ -19,6 +19,7 @@ exports:
   Gitaccess.main
   Gitaccess.parseString
   Gitaccess.repository
+  Gitaccess.runArgon
 module dependencies:
 package dependencies: StateVar-1.1.0.4@StateVar-1.1.0.4-5dJbnTVECtEAhfJXPZKdbO
                       adjunctions-4.3@adjunctions-4.3-4NsFv08p09OH79kZsQDVh1
@@ -221,7 +222,9 @@ import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
 import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
 import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
 import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
 import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IO.Handle.Text b65719f3b262b071ab1aabeb72fc9d8b
 import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
 import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
 import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
@@ -515,37 +518,33 @@ d8d7f08efa95da7fec10eeeddfe6a96c
 b15d8c884097e31f0f0b724d8625cd6c
   getRepo5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "clone"#) -}
-e25ac29dca5767e678de70a664a685da
+a0ea71da1ecf363ab107ced2ed7968b0
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: InlineRule (0, True, True)
                 Gitaccess.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
-95efcefefc8713ad2a92792270c77836
+05b54de7fd85e702bae2a399c16e7865
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <S,U>,
      Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
-                 case System.Directory.createDirectoryIfMissing1
-                        GHC.Types.False
-                        Gitaccess.main9
-                        s of ds1 { (#,#) ipv ipv1 ->
-                 case Gitaccess.getCommitList1 ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case Gitaccess.getCommitList1 s of ds1 { (#,#) ipv ipv1 ->
                  case GHC.IO.Handle.Text.hPutStr2
                         GHC.IO.Handle.FD.stdout
                         (GHC.Show.showList__
                            @ (GHC.Base.Maybe Data.Text.Internal.Text)
-                           Gitaccess.main8
-                           ipv3
+                           Gitaccess.main11
+                           ipv1
                            (GHC.Types.[] @ GHC.Types.Char))
                         GHC.Types.True
-                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
                  case System.Process.callProcess1
                         Gitaccess.getCommit6
                         Gitaccess.getRepo2
-                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
                  case System.Process.$wreadCreateProcess
-                        Gitaccess.main3
+                        Gitaccess.main6
                         Gitaccess.getCommit2
                         (GHC.Base.Nothing @ [(GHC.Base.String, GHC.Base.String)])
                         System.Process.Common.Inherit
@@ -558,52 +557,114 @@ e25ac29dca5767e678de70a664a685da
                         (GHC.Base.Nothing @ System.Posix.Types.GroupID)
                         (GHC.Base.Nothing @ System.Posix.Types.UserID)
                         (GHC.Types.[] @ GHC.Types.Char)
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        Gitaccess.main5
+                        GHC.Types.True
                         ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                 case Gitaccess.main2
+                        Gitaccess.getCommit3
+                        ipv8 of ds6 { (#,#) ipv10 ipv11 ->
                  GHC.IO.Handle.Text.hPutStr2
                    GHC.IO.Handle.FD.stdout
-                   Gitaccess.main2
+                   ipv11
                    GHC.Types.True
-                   ipv8 } } } } }) -}
-fd898413e157323cfc5919084f60c52d
-  main2 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "got that commit"#) -}
-2930c5a11f44753a2214c06937bcab0b
-  main3 :: System.Process.Common.CmdSpec
-  {- Unfolding: (System.Process.Common.RawCommand
-                   Gitaccess.getCommit6
-                   Gitaccess.main4) -}
-8838c4bd1756e590c28c5d5d1236e7c0
-  main4 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   Gitaccess.getCommit5
-                   Gitaccess.main5) -}
-50aa64d8ddf1fa2d589ccc2ee04c0c7f
-  main5 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   Gitaccess.getCommit4
-                   Gitaccess.main6) -}
-9f8d0bd52389c90b8b6f8155a3756dc8
-  main6 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   Gitaccess.main7
-                   (GHC.Types.[] @ GHC.Base.String)) -}
-eeb8db4b09c314a9481b1bf40487aeb4
-  main7 :: [GHC.Types.Char]
+                   ipv10 } } } } } }) -}
+e0b090cb18a89b6a4e560e7116300ba0
+  main10 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
-                   "cf609c0dd7f2ca4da9cf85a7b11babf24c0a1832"#) -}
-2f1d66e38e2fd9bcb1f4b4d5f555b062
-  main8 :: GHC.Base.Maybe Data.Text.Internal.Text -> GHC.Show.ShowS
+                   "b865e244571d87de626258cb8f8fce3e54a4d70e"#) -}
+a1ccb6a397dde264395ebf3bc7a942ab
+  main11 :: GHC.Base.Maybe Data.Text.Internal.Text -> GHC.Show.ShowS
   {- Arity: 1,
      Unfolding: (GHC.Show.$fShowMaybe_$cshowsPrec
                    @ Data.Text.Internal.Text
                    Data.Text.Show.$fShowText
                    GHC.Show.shows22) -}
-c42046ff929041e642624809235b4129
-  main9 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString# "tmpgit"#) -}
+93b5f113d6d64d7efe6047bae5490a6f
+  main2 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Base.String #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: (\ (filePath :: GHC.Base.String)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case System.Process.Posix.$wcreateProcess_Internal
+                        System.Process.createProcess3
+                        (System.Process.Common.RawCommand
+                           Gitaccess.main4
+                           (Data.OldList.words
+                              (GHC.CString.unpackAppendCString#
+                                 "exec -- argon --json "#
+                                 filePath)))
+                        (GHC.Base.Nothing @ GHC.IO.FilePath)
+                        (GHC.Base.Nothing @ [(GHC.Base.String, GHC.Base.String)])
+                        System.Process.Common.Inherit
+                        System.Process.Common.CreatePipe
+                        System.Process.Common.Inherit
+                        GHC.Types.False
+                        GHC.Types.False
+                        GHC.Types.False
+                        GHC.Types.False
+                        GHC.Types.False
+                        GHC.Types.False
+                        (GHC.Base.Nothing @ System.Posix.Types.GroupID)
+                        (GHC.Base.Nothing @ System.Posix.Types.UserID)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case System.Process.createProcess2
+                        System.Process.Common.Inherit
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 case System.Process.createProcess2
+                        System.Process.Common.CreatePipe
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case System.Process.createProcess2
+                        System.Process.Common.Inherit
+                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                 case ipv1 of wild { (,,,) ds ds7 ds8 procHandle ->
+                 case ds7 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.IO.failIO1 @ GHC.Base.String Gitaccess.main3 ipv6
+                   GHC.Base.Just out
+                   -> case procHandle of ww { System.Process.Common.ProcessHandle ww1 ww2 ->
+                      case System.Process.$wwaitForProcess
+                             ww1
+                             ww2
+                             ipv6 of ds9 { (#,#) ipv11 ipv12 ->
+                      GHC.IO.Handle.Text.hGetContents1 out ipv11 } } } } } } } }) -}
+cbaa48d5e7c71c918a98b00c15d59de0
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Pattern match failure in do expression at src/Gitaccess.hs:72:5-31"#) -}
+0fd45274566ef9e7239344e2d0469a94
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "stack"#) -}
+e4925931970de10156a81dbe6674d760
+  main5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "got that commit"#) -}
+70ef41c6798a01f44dac7901a80fd609
+  main6 :: System.Process.Common.CmdSpec
+  {- Unfolding: (System.Process.Common.RawCommand
+                   Gitaccess.getCommit6
+                   Gitaccess.main7) -}
+c46fa5584749bb250d3763d6f46c56d5
+  main7 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Gitaccess.getCommit5
+                   Gitaccess.main8) -}
+a969c7bb2987653748fe1c8402c818d2
+  main8 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Gitaccess.getCommit4
+                   Gitaccess.main9) -}
+2337eef70f79dba7379f62b242788d2c
+  main9 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Gitaccess.main10
+                   (GHC.Types.[] @ GHC.Base.String)) -}
 a139c00487ac5ff3ffa9924f5025a77a
   parseString :: [GHC.Types.Char] -> [GHC.Types.Char]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
@@ -613,6 +674,14 @@ fca288e1d44ac6222fb1a418296608ba
                 Gitaccess.getCommitList10
                   `cast`
                 (Sym (GitHub.Data.Name.N:Name[0] <GitHub.Data.Repos.Repo>_P)) -}
+58a0858da2b9c63837846ee91ded338c
+  runArgon :: GHC.Base.String -> GHC.Types.IO GHC.Base.String
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Gitaccess.main2
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Base.String>_R)) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

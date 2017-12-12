@@ -1,0 +1,98 @@
+Warning: github.cabal: Unknown fields: build-tool-depends (line 189)
+Fields allowed in this section:
+type, main-is, test-module, buildable, build-tools, build-depends,
+cpp-options, cc-options, ld-options, pkgconfig-depends, frameworks,
+c-sources, js-sources, default-language, other-languages,
+default-extensions, other-extensions, extensions, extra-libraries,
+extra-ghci-libraries, extra-lib-dirs, includes, install-includes,
+include-dirs, hs-source-dirs, other-modules, ghc-prof-options,
+ghcjs-prof-options, ghc-shared-options, ghcjs-shared-options,
+ghc-options, ghcjs-options, jhc-options, hugs-options,
+nhc98-options
+Configuring github-0.18...
+Building github-0.18...
+Preprocessing library github-0.18...
+[ 1 of 62] Compiling GitHub.Internal.Prelude ( src/GitHub/Internal/Prelude.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Internal/Prelude.o )
+[ 2 of 62] Compiling GitHub.Auth      ( src/GitHub/Auth.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Auth.o )
+[ 3 of 62] Compiling GitHub.Data.URL  ( src/GitHub/Data/URL.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/URL.o )
+[ 4 of 62] Compiling GitHub.Data.Id   ( src/GitHub/Data/Id.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Id.o )
+[ 5 of 62] Compiling GitHub.Data.DeployKeys ( src/GitHub/Data/DeployKeys.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/DeployKeys.o )
+[ 6 of 62] Compiling GitHub.Data.Webhooks ( src/GitHub/Data/Webhooks.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Webhooks.o )
+[ 7 of 62] Compiling GitHub.Data.Name ( src/GitHub/Data/Name.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Name.o )
+[ 8 of 62] Compiling GitHub.Data.Definitions ( src/GitHub/Data/Definitions.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Definitions.o )
+[ 9 of 62] Compiling GitHub.Data.Comments ( src/GitHub/Data/Comments.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Comments.o )
+[10 of 62] Compiling GitHub.Data.Events ( src/GitHub/Data/Events.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Events.o )
+[11 of 62] Compiling GitHub.Data.Milestone ( src/GitHub/Data/Milestone.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Milestone.o )
+[12 of 62] Compiling GitHub.Data.Releases ( src/GitHub/Data/Releases.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Releases.o )
+[13 of 62] Compiling GitHub.Data.Reviews ( src/GitHub/Data/Reviews.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Reviews.o )
+
+src/GitHub/Data/Reviews.hs:3:1: Warning:
+    The import of ‘Data.Text’ is redundant
+      except perhaps to import instances from ‘Data.Text’
+    To import instances alone, use: import Data.Text()
+[14 of 62] Compiling GitHub.Data.GitData ( src/GitHub/Data/GitData.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/GitData.o )
+[15 of 62] Compiling GitHub.Data.Content ( src/GitHub/Data/Content.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Content.o )
+
+src/GitHub/Data/Content.hs:10:1: Warning:
+    The import of ‘Data.Maybe’ is redundant
+      except perhaps to import instances from ‘Data.Maybe’
+    To import instances alone, use: import Data.Maybe()
+[16 of 62] Compiling GitHub.Data.Options ( src/GitHub/Data/Options.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Options.o )
+[17 of 62] Compiling GitHub.Data.Repos ( src/GitHub/Data/Repos.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Repos.o )
+[18 of 62] Compiling GitHub.Data.Activities ( src/GitHub/Data/Activities.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Activities.o )
+[19 of 62] Compiling GitHub.Data.Gists ( src/GitHub/Data/Gists.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Gists.o )
+[20 of 62] Compiling GitHub.Data.Search ( src/GitHub/Data/Search.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Search.o )
+[21 of 62] Compiling GitHub.Data.Request ( src/GitHub/Data/Request.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Request.o )
+[22 of 62] Compiling GitHub.Data.PullRequests ( src/GitHub/Data/PullRequests.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/PullRequests.o )
+[23 of 62] Compiling GitHub.Data.Issues ( src/GitHub/Data/Issues.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Issues.o )
+[24 of 62] Compiling GitHub.Data.Statuses ( src/GitHub/Data/Statuses.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Statuses.o )
+[25 of 62] Compiling GitHub.Data.Teams ( src/GitHub/Data/Teams.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Teams.o )
+[26 of 62] Compiling GitHub.Data.Webhooks.Validate ( src/GitHub/Data/Webhooks/Validate.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data/Webhooks/Validate.o )
+[27 of 62] Compiling GitHub.Data      ( src/GitHub/Data.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Data.o )
+[28 of 62] Compiling GitHub.Request   ( src/GitHub/Request.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Request.o )
+[29 of 62] Compiling GitHub.Endpoints.Activity.Events ( src/GitHub/Endpoints/Activity/Events.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Activity/Events.o )
+[30 of 62] Compiling GitHub.Endpoints.Activity.Starring ( src/GitHub/Endpoints/Activity/Starring.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Activity/Starring.o )
+[31 of 62] Compiling GitHub.Endpoints.Activity.Watching ( src/GitHub/Endpoints/Activity/Watching.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Activity/Watching.o )
+[32 of 62] Compiling GitHub.Endpoints.Gists ( src/GitHub/Endpoints/Gists.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Gists.o )
+[33 of 62] Compiling GitHub.Endpoints.Gists.Comments ( src/GitHub/Endpoints/Gists/Comments.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Gists/Comments.o )
+[34 of 62] Compiling GitHub.Endpoints.GitData.Blobs ( src/GitHub/Endpoints/GitData/Blobs.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/GitData/Blobs.o )
+[35 of 62] Compiling GitHub.Endpoints.GitData.Commits ( src/GitHub/Endpoints/GitData/Commits.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/GitData/Commits.o )
+[36 of 62] Compiling GitHub.Endpoints.GitData.References ( src/GitHub/Endpoints/GitData/References.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/GitData/References.o )
+[37 of 62] Compiling GitHub.Endpoints.GitData.Trees ( src/GitHub/Endpoints/GitData/Trees.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/GitData/Trees.o )
+[38 of 62] Compiling GitHub.Endpoints.Issues ( src/GitHub/Endpoints/Issues.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Issues.o )
+[39 of 62] Compiling GitHub.Endpoints.Issues.Comments ( src/GitHub/Endpoints/Issues/Comments.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Issues/Comments.o )
+[40 of 62] Compiling GitHub.Endpoints.Issues.Events ( src/GitHub/Endpoints/Issues/Events.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Issues/Events.o )
+[41 of 62] Compiling GitHub.Endpoints.Issues.Labels ( src/GitHub/Endpoints/Issues/Labels.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Issues/Labels.o )
+[42 of 62] Compiling GitHub.Endpoints.Issues.Milestones ( src/GitHub/Endpoints/Issues/Milestones.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Issues/Milestones.o )
+[43 of 62] Compiling GitHub.Endpoints.Organizations ( src/GitHub/Endpoints/Organizations.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Organizations.o )
+[44 of 62] Compiling GitHub.Endpoints.Organizations.Members ( src/GitHub/Endpoints/Organizations/Members.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Organizations/Members.o )
+[45 of 62] Compiling GitHub.Endpoints.Organizations.Teams ( src/GitHub/Endpoints/Organizations/Teams.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Organizations/Teams.o )
+[46 of 62] Compiling GitHub.Endpoints.PullRequests ( src/GitHub/Endpoints/PullRequests.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/PullRequests.o )
+[47 of 62] Compiling GitHub.Endpoints.PullRequests.Reviews ( src/GitHub/Endpoints/PullRequests/Reviews.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/PullRequests/Reviews.o )
+
+src/GitHub/Endpoints/PullRequests/Reviews.hs:21:1: Warning:
+    The import of ‘GitHub.Data.Id’ is redundant
+      except perhaps to import instances from ‘GitHub.Data.Id’
+    To import instances alone, use: import GitHub.Data.Id()
+
+src/GitHub/Endpoints/PullRequests/Reviews.hs:23:1: Warning:
+    The import of ‘Request’ from module ‘GitHub.Request’ is redundant
+[48 of 62] Compiling GitHub.Endpoints.PullRequests.Comments ( src/GitHub/Endpoints/PullRequests/Comments.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/PullRequests/Comments.o )
+[49 of 62] Compiling GitHub.Endpoints.Repos ( src/GitHub/Endpoints/Repos.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos.o )
+[50 of 62] Compiling GitHub.Endpoints.Repos.Collaborators ( src/GitHub/Endpoints/Repos/Collaborators.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/Collaborators.o )
+[51 of 62] Compiling GitHub.Endpoints.Repos.Comments ( src/GitHub/Endpoints/Repos/Comments.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/Comments.o )
+[52 of 62] Compiling GitHub.Endpoints.Repos.Commits ( src/GitHub/Endpoints/Repos/Commits.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/Commits.o )
+[53 of 62] Compiling GitHub.Endpoints.Repos.Forks ( src/GitHub/Endpoints/Repos/Forks.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/Forks.o )
+[54 of 62] Compiling GitHub.Endpoints.Repos.Releases ( src/GitHub/Endpoints/Repos/Releases.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/Releases.o )
+[55 of 62] Compiling GitHub.Endpoints.Repos.Statuses ( src/GitHub/Endpoints/Repos/Statuses.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/Statuses.o )
+[56 of 62] Compiling GitHub.Endpoints.Repos.Webhooks ( src/GitHub/Endpoints/Repos/Webhooks.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/Webhooks.o )
+[57 of 62] Compiling GitHub.Endpoints.Search ( src/GitHub/Endpoints/Search.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Search.o )
+[58 of 62] Compiling GitHub.Endpoints.Users ( src/GitHub/Endpoints/Users.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Users.o )
+[59 of 62] Compiling GitHub.Endpoints.Users.Followers ( src/GitHub/Endpoints/Users/Followers.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Users/Followers.o )
+[60 of 62] Compiling GitHub.Endpoints.Repos.Contents ( src/GitHub/Endpoints/Repos/Contents.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/Contents.o )
+[61 of 62] Compiling GitHub.Endpoints.Repos.DeployKeys ( src/GitHub/Endpoints/Repos/DeployKeys.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub/Endpoints/Repos/DeployKeys.o )
+[62 of 62] Compiling GitHub           ( src/GitHub.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/GitHub.o )
+In-place registering github-0.18...
+Installing library in /Users/HughLavery/Documents/College/Year
+4/CS4400/distributed-cyclomatic-complexity/.stack-work/install/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/lts-3.22/7.10.2/lib/x86_64-linux-ghc-7.10.2/github-0.18-8rYTIklCOU9AvjOwlVUaam
+Registering github-0.18...
