@@ -29,12 +29,12 @@ import           PrimeFactors
 import           System.Environment                                 (getArgs)
 import           System.Exit
 import           Gitaccess
-import           Data.ByteString.Lazy hiding (putStrLn)
+--import           Data.ByteString.Lazy hiding (putStrLn)
 --import           Data.ByteString hiding (putStrLn)
 
 -- this is the work we get workers to do. It could be anything we want. To keep things simple, we'll calculate the
 -- number of prime factors for the integer passed.
-doWork :: String -> IO ByteString
+doWork :: String -> IO Integer
 doWork = workerWork
 
 -- | worker function.
@@ -71,15 +71,16 @@ remotable ['worker] -- this makes the worker function executable on a remote nod
 
 manager :: [String]    -- The number range we wish to generate work for (there will be n work packages)
         -> [NodeId]   -- The set of cloud haskell nodes we will initalise as workers
+        -> Int
         -> Process Integer
-manager n workers = do
+manager commits workers n = do
   us <- getSelfPid
 
   -- first, we create a thread that generates the work tasks in response to workers
   -- requesting work.
   workQueue <- spawnLocal $ do
     -- Return the next bit of work to be done
-    forM_ n $ \m -> do
+    forM_ commits $ \m -> do
       pid <- expect   -- await a message from a free worker asking for work
       send pid m     -- send them work
 
@@ -97,9 +98,7 @@ manager n workers = do
   -- wait for all the results from the workers and return the sum total. Look at the implementation, whcih is not simply
   -- summing integer values, but instead is expecting results from workers.
   --sumIntegers (fromIntegral n)
-  m <- expect
-  liftIO $ putStrLn $ "next worker returned: " ++ (m)
-  return 99
+  sumIntegers (fromIntegral n)
 -- note how this function works: initialised with n, the number range we started the program with, it calls itself
 -- recursively, decrementing the integer passed until it finally returns the accumulated value in go:acc. Thus, it will
 -- be called n times, consuming n messages from the message queue, corresponding to the n messages sent by workers to
@@ -128,9 +127,10 @@ someFunc = do
     ["manager", host, port, n] -> do
       putStrLn "Starting Node as Manager"
       backend <- initializeBackend host port rtable
-      commits <- getCommitList
+      commits <- liftIO $ getCommitList
+      numComm <- liftIO $ numCommits commits
       startMaster backend $ \workers -> do
-        result <- manager commits workers
+        result <- manager commits workers numComm
         liftIO $ print result
     ["worker", host, port] -> do
       putStrLn "Starting Node as Worker"

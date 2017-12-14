@@ -22,15 +22,19 @@ import System.Directory
 import System.Process
 import System.IO
 import GHC.Generics
-import Data.ByteString.Lazy.Char8 as B8 hiding (putStrLn, map, words)
-import qualified Data.ByteString.Lazy as B
+--import Data.ByteString.Lazy.Char8 as B8 hiding (putStrLn, map, words)
+--import qualified Data.ByteString.Lazy as B
 import Data.Aeson
 import Data.Aeson.TH (deriveJSON, defaultOptions)
 import Control.Monad.IO.Class
 import Data.Maybe
+import System.IO.Unsafe
 
+data ListCommits = ListCommits {
+    
+}
 data Commits = Commits {
-      block :: Block
+      blocks :: [Block]
     , path  :: !Text
     , types :: !Text
     } deriving (Generic, FromJSON, ToJSON, Show)
@@ -53,6 +57,9 @@ main :: IO ()
 main = do
     shas <- getCommitList
     putStrLn (show shas)
+    getRepo
+    result <- workerWork "17c3794ecada6fa739e233b405b30112e1191f5b"
+    putStrLn (show result)
 --     getRepo
 --     getCommit "cf609c0dd7f2ca4da9cf85a7b11babf24c0a1832"
 --     putStrLn "got that commit"
@@ -61,10 +68,15 @@ main = do
 
 
 
-workerWork :: String -> IO ByteString
+workerWork :: String -> IO Integer
 workerWork commit = do
+    getRepo
     getCommit commit
-    runArgon "Distributed-file-system"
+    result <- runArgon "Distributed-file-system"
+    --putStrLn (result)
+    sumComplexity result
+    
+
 
 initaliseWorker :: IO()
 initaliseWorker = do
@@ -84,6 +96,10 @@ getCommitList = do
             let final = map Data.Text.unpack (shaList)
             return final
     
+numCommits :: [String] -> IO Int 
+numCommits commits = do
+    return (length commits)
+
 formatCommit :: GitHub.Commit -> String
 formatCommit commit =
    (show $ GitHub.commitSha commit)
@@ -96,22 +112,53 @@ parseString xs = xs
 
 getRepo :: IO()
 getRepo = do
-    callProcess "git" ["clone", "https://github.com/Hughlav/Distributed-file-system.git"]
+    exist <- doesDirectoryExist "Distributed-file-system"
+    if exist
+        then
+            putStrLn "file exists already"
+        else 
+            callProcess "git" ["clone", "https://github.com/Hughlav/Distributed-file-system.git"]
 
 getCommit :: String -> IO String
 getCommit commit = do
     readCreateProcess ((proc "git" ["reset","--hard",commit]){ cwd = Just "Distributed-file-system"}) ""
 
-runArgon :: String -> IO ByteString
+runArgon :: String -> IO String
 runArgon filePath = do
-    let command = "exec -- argon --json "++filePath
+    let command = "exec -- argon --no-color "++filePath
     (_,Just out, _, procHandle) <- createProcess (proc "stack" $ words command) { std_out = CreatePipe }
     waitForProcess procHandle
-    B8.hGetContents out
+    hGetContents out
 
-decodeJSON :: ByteString -> IO()
-decodeJSON result = do
-    let d = (decode result) :: Maybe Commits
-    case d of
-        Nothing -> putStrLn "err"
-        Just m -> print d
+sumComplexity :: String -> IO Integer
+sumComplexity result = do
+    let lineList = lines result
+    let complex = map (\a -> returnComplex a) lineList
+    let listComplex = map unsafePerformIO complex
+    return (sum listComplex)
+    --complexity
+    
+
+
+returnComplex :: String -> IO Integer
+returnComplex line = do
+    --putStrLn $ "line: " ++ line
+    case words line of
+        [_,_,_,n] -> do
+            --putStrLn $ "n = " ++ (show n)
+            return (read n)
+        [_, _] -> do 
+            let intN = 0 :: Integer
+            return intN
+        [_] -> do
+            --putStrLn $ "line = " ++ (line)
+            let intN = 0 :: Integer
+            return intN
+
+-- decodeJSON :: ByteString -> IO()
+-- decodeJSON result = do
+
+--     let d = (decode result) :: Maybe Commits
+--     case d of
+--         Nothing -> putStrLn "err"
+--         Just m -> print d

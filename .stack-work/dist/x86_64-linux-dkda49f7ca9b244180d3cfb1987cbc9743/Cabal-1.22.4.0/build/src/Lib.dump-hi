@@ -1,10 +1,10 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-12 21:13:12.028818 UTC
+2017-12-14 23:27:41.212368 UTC
 
 interface usecl_LbyoIXb6p756ZYzHnVxUNm:Lib 7102
-  interface hash: 3451039aa388ba77f3b2a93147f0143c
-  ABI hash: 5171942b9434cd1de76311d22838836e
+  interface hash: 833c194b2e98287908f2beb85f6ef898
+  ABI hash: c071b140704b96e1f71f0814c3e9266f
   export-list hash: c7c6668eecb8ad9384846036474026f4
   orphan hash: 54432b44f75a96566a50860569055e04
   flag hash: 79b1a83113dabb1892ce091f85035f17
@@ -245,14 +245,13 @@ import  -/  base-4.8.1.0:Control.Monad dfea142d91349c4861427789d50d5b80
 import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
 import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
 import  -/  base-4.8.1.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.1.0:GHC.Real 4c3b525ecbd4d62bb287aec36d4c2f0d
 import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
 import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
 import  -/  base-4.8.1.0:System.Environment 946ddc2d7c48138bb213316abaff2a8d
 import  -/  base-4.8.1.0:System.Exit 667ccf9b7fe125c4036efb58a244974a
 import  -/  base-4.8.1.0:System.IO d541b8bdf18c04de3ab7ea0277c4eba3
 import  -/  binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary 6f0fa1bb755de49248b7f944b0669130
-import  -/  bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Lazy ebc05917f240e5ff4bf7a3f2db5cbf62
-import  -/  bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Lazy.Internal 50ad92eb5836517cb2e48dd14fd9734d
 import  -/  distributed-process-simplelocalnet-0.2.3.2@distr_7PUDhc2ST5xBOhSjKmmoyu:Control.Distributed.Process.Backend.SimpleLocalnet eccafc918dc9780e67c0cf30b8748524
 import  -/  distributed-static-0.3.8@distr_J7SBnSxTH8p3y1CbcETiNw:Control.Distributed.Static f672cb383375a4e9e45d15c08566a231
 import  -/  distributed-process-0.6.6@distr_L1tyDqPpCb2AodTZ0AJ0pI:Control.Distributed.Process 2f33ad702b9a660282f0ec08817e310c
@@ -269,10 +268,11 @@ import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type bf9b4d13b1dbe96a83786d2e47d2e8c
 import  -/  network-transport-tcp-0.5.1@netwo_AianqpaP9OhAa1lkaIyEz7:Network.Transport.TCP b0410ea68648c9d5400984527d88ca09
 import  -/  rank1dynamic-0.3.3.0@rank1_KPH4Hs53jZH5hccxGyhUAK:Data.Rank1Dynamic 7be680333db323c269477aba9d4c281a
 import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.Class 9605d683dd45bfe8c9f8bdf894951b7c
-import  -/  Gitaccess e918b85a2d59d3ac2883dcb7340aba27
-  exports: 8046e7a6ca836ff7da0318a3f317f4a4
+import  -/  Gitaccess 0fa8e1d4ebc620f78f8e159d91df2c04
+  exports: ddf109d6fe4d5906014c807dfbe2b2ed
   getCommitList 0130a66ca8973fd9daddcf173bf6989d
-  workerWork 7ce94cd413bfa2aa7eb6e8bef4ae9db6
+  numCommits 5cf594cbac57361187f4d6e511f8c7fb
+  workerWork 3731a533a47e774c3bad6d9a4832dd42
 import  -/  PrimeFactors d683cfa788f7a2b525c641915dc8be13
   exports: 128430bde06a2b4649be9f847cd3b57a
 b8c362e5c1a05693f24b5e0b1ae2d2d1
@@ -675,7 +675,7 @@ d41d53124a8e13cd78a431e482cb8fbf
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1, Strictness: <L,U> -}
-f2df0520a3368ab622a9857e482bfde9
+575fdbdfd3e108d25b706cdcb4c2cf20
   worker ::
     (Control.Distributed.Process.Internal.Types.ProcessId,
      Control.Distributed.Process.Internal.Types.ProcessId)
@@ -696,7 +696,7 @@ f2df0520a3368ab622a9857e482bfde9
                                          <GHC.Types.IO>_R
                                          <()>_N))
                                (Sym (Control.Distributed.Process.Internal.Types.NTCo:Process[0]) <()>_N))) -}
-80b5704c6753f84c26e38490cbc4003c
+d1db1c5d585a866d234096fec28705f7
   worker1 ::
     (Control.Distributed.Process.Internal.Types.ProcessId,
      Control.Distributed.Process.Internal.Types.ProcessId)
@@ -711,7 +711,7 @@ f2df0520a3368ab622a9857e482bfde9
                          Control.Distributed.Process.Internal.Types.ProcessId)
                    w1 :: Control.Distributed.Process.Internal.Types.LocalProcess
                    w2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 case w of ww { (,) ww2 ww6 -> Lib.$wa ww2 ww6 w1 w2 }) -}
+                 case w of ww { (,) ww3 ww5 -> Lib.$wa ww3 ww5 w1 w2 }) -}
 "SPEC/Lib $fBinary(,) @ ProcessId @ ProcessId" [ALWAYS] forall $dBinary :: Data.Binary.Class.Binary
                                                                              Control.Distributed.Process.Internal.Types.ProcessId
                                                                $dBinary1 :: Data.Binary.Class.Binary

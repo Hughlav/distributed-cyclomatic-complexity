@@ -18,14 +18,14 @@
 resolver: lts-3.22
 #nightly-2016-12-10
 
-docker:
-  enable: True # warning!
+# docker:
+#   enable: True # warning!
 
 # stack image container 
-image:
-  container:
-    name: use-cloudhaskell
-    base: fpco/stack-run
+# image:
+#   container:
+#     name: use-cloudhaskell
+#     base: fpco/stack-run
 
 # User packages to be built.
 # Various formats can be used as shown in the example below.
