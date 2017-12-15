@@ -53,13 +53,13 @@ data Block = Block {
 repository :: Name Repo
 repository = "Distributed-file-system"
 
-main :: IO ()
-main = do
-    shas <- getCommitList
-    putStrLn (show shas)
-    getRepo
-    result <- workerWork "2470599e7205a9a3fcd544bfe7259f932ca0a68d"
-    putStrLn (show result)
+-- main :: IO ()
+-- main = do
+--     shas <- getCommitList
+--     putStrLn (show shas)
+--     getRepo
+--     result <- workerWork "f8446f6f8b6a20a248fe07ebd9b8ee1bf04498c8"
+--     putStrLn (show result)
 -- --     getRepo
 --     getCommit "2470599e7205a9a3fcd544bfe7259f932ca0a68d"
 --     putStrLn "got that commit"
@@ -70,7 +70,6 @@ main = do
 
 workerWork :: String -> IO Integer
 workerWork commit = do
-    getRepo
     getCommit commit
     result <- runArgon "Distributed-file-system"
     --putStrLn (result)
@@ -114,8 +113,9 @@ getRepo :: IO()
 getRepo = do
     exist <- doesDirectoryExist "Distributed-file-system"
     if exist
-        then
-            return()
+        then do
+            removeDirectoryRecursive "Distributed-file-system"
+            callProcess "git" ["clone", "https://github.com/Hughlav/Distributed-file-system.git"]
         else 
             callProcess "git" ["clone", "https://github.com/Hughlav/Distributed-file-system.git"]
 
@@ -160,10 +160,3 @@ returnComplex line = do
             let intN = 0 :: Integer
             return intN
 
--- decodeJSON :: ByteString -> IO()
--- decodeJSON result = do
-
---     let d = (decode result) :: Maybe Commits
---     case d of
---         Nothing -> putStrLn "err"
---         Just m -> print d

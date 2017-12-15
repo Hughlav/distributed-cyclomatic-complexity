@@ -141,6 +141,7 @@ someFunc = do
         liftIO $ print result
     ["worker", host, port] -> do
       putStrLn "Starting Node as Worker"
+      liftIO $ getRepo
       backend <- initializeBackend host port rtable
       startSlave backend
     _ -> putStrLn "Bad parameters"
