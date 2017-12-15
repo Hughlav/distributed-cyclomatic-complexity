@@ -20,5 +20,9 @@ stack exec use-cloudhaskell-exe manager localhost 8005 1
 
 When workers are running on multiple nodes, they work fine. Locally due to the fact git repositories do not let multiple requests for changing the commit at the same time, it is not possible to run multiple workers.
 
-Graph with results to follow.
 
+
+![alt text](https://ibb.co/hkGNs6)
+
+
+I used aws to host the workers. The First data point at 1 was running locall, the second for one node on an aws server.
