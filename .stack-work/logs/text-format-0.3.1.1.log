@@ -1,0 +1,45 @@
+Configuring text-format-0.3.1.1...
+Building text-format-0.3.1.1...
+Preprocessing library text-format-0.3.1.1...
+[1 of 7] Compiling Data.Text.Format.Types.Internal ( Data/Text/Format/Types/Internal.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Data/Text/Format/Types/Internal.o )
+
+Data/Text/Format/Types/Internal.hs:23:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[2 of 7] Compiling Data.Text.Format.Types ( Data/Text/Format/Types.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Data/Text/Format/Types.o )
+[3 of 7] Compiling Data.Text.Format.Functions ( Data/Text/Format/Functions.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Data/Text/Format/Functions.o )
+
+Data/Text/Format/Functions.hs:20:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+[4 of 7] Compiling Data.Text.Format.Int ( Data/Text/Format/Int.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Data/Text/Format/Int.o )
+
+Data/Text/Format/Int.hs:20:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+Data/Text/Format/Int.hs:23:1: Warning:
+    The import of ‘Word’ from module ‘Data.Word’ is redundant
+
+Data/Text/Format/Int.hs:25:1: Warning:
+    The import of ‘GHC.Num’ is redundant
+      except perhaps to import instances from ‘GHC.Num’
+    To import instances alone, use: import GHC.Num()
+[5 of 7] Compiling Data.Text.Buildable ( Data/Text/Buildable.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Data/Text/Buildable.o )
+
+Data/Text/Buildable.hs:19:1: Warning:
+    The import of ‘Data.Monoid’ is redundant
+      except perhaps to import instances from ‘Data.Monoid’
+    To import instances alone, use: import Data.Monoid()
+
+Data/Text/Buildable.hs:30:1: Warning:
+    The import of ‘Word’ from module ‘Data.Word’ is redundant
+[6 of 7] Compiling Data.Text.Format.Params ( Data/Text/Format/Params.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Data/Text/Format/Params.o )
+[7 of 7] Compiling Data.Text.Format ( Data/Text/Format.hs, .stack-work/dist/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/Cabal-1.22.4.0/build/Data/Text/Format.o )
+In-place registering text-format-0.3.1.1...
+Installing library in
+/Users/HughLavery/.stack/snapshots/x86_64-linux-dkda49f7ca9b244180d3cfb1987cbc9743/lts-3.22/7.10.2/lib/x86_64-linux-ghc-7.10.2/text-format-0.3.1.1-1wUNjFhXI5CIIgFNBNw931
+Registering text-format-0.3.1.1...

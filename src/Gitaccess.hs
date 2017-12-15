@@ -58,10 +58,10 @@ main = do
     shas <- getCommitList
     putStrLn (show shas)
     getRepo
-    result <- workerWork "17c3794ecada6fa739e233b405b30112e1191f5b"
+    result <- workerWork "2470599e7205a9a3fcd544bfe7259f932ca0a68d"
     putStrLn (show result)
---     getRepo
---     getCommit "cf609c0dd7f2ca4da9cf85a7b11babf24c0a1832"
+-- --     getRepo
+--     getCommit "2470599e7205a9a3fcd544bfe7259f932ca0a68d"
 --     putStrLn "got that commit"
 --     result <- runArgon "Distributed-file-system"
 --     putStrLn result
@@ -78,9 +78,9 @@ workerWork commit = do
     
 
 
-initaliseWorker :: IO()
-initaliseWorker = do
-    getRepo
+-- initaliseWorker :: IO()
+-- initaliseWorker = do
+--     getRepo
 
 getCommitList :: IO [String] 
 getCommitList = do 
@@ -115,7 +115,7 @@ getRepo = do
     exist <- doesDirectoryExist "Distributed-file-system"
     if exist
         then
-            putStrLn "file exists already"
+            return()
         else 
             callProcess "git" ["clone", "https://github.com/Hughlav/Distributed-file-system.git"]
 
@@ -133,6 +133,7 @@ runArgon filePath = do
 sumComplexity :: String -> IO Integer
 sumComplexity result = do
     let lineList = lines result
+    --putStrLn $ "total lines are: " ++ (show lineList)
     let complex = map (\a -> returnComplex a) lineList
     let listComplex = map unsafePerformIO complex
     return (sum listComplex)
@@ -147,10 +148,14 @@ returnComplex line = do
         [_,_,_,n] -> do
             --putStrLn $ "n = " ++ (show n)
             return (read n)
-        [_, _] -> do 
+        [_,_] -> do 
             let intN = 0 :: Integer
             return intN
         [_] -> do
+            --putStrLn $ "line = " ++ (line)
+            let intN = 0 :: Integer
+            return intN
+        [_,_,_,_,_,_,_] -> do
             --putStrLn $ "line = " ++ (line)
             let intN = 0 :: Integer
             return intN

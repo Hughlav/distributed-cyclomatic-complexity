@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-12 19:10:29.254315 UTC
+2017-12-15 02:24:40.540253 UTC
 
-interface usecl_LbyoIXb6p756ZYzHnVxUNm:PrimeFactors 7102
-  interface hash: 14dab27782f298e3cbcd275d9c9bf28c
-  ABI hash: d683cfa788f7a2b525c641915dc8be13
-  export-list hash: 128430bde06a2b4649be9f847cd3b57a
+interface usecl_A3QMivhrxOhEyWWnOrdC7N:PrimeFactors 7102
+  interface hash: 9d32b61db6a24318989b0add6cced9ca
+  ABI hash: f0a068636ad487b3dbfaf8e8ad3ee545
+  export-list hash: 77d4b6ef8a11fb889b299c300158619c
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
   flag hash: 104660a8a9277b211f7a64a3ff9f6864
   sig of: Nothing
@@ -30,7 +30,7 @@ import  -/  base-4.8.1.0:GHC.Real 4c3b525ecbd4d62bb287aec36d4c2f0d
 import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
 import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
 import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type bf9b4d13b1dbe96a83786d2e47d2e8ca
-88bfd2f5ab146c20f1287eb96d93dbce
+767a530cb87cf9145ffd7a41a4dd90b1
   $wnumPrimeFactors :: GHC.Integer.Type.Integer -> GHC.Prim.Int#
   {- Arity: 1, Strictness: <S,U>, Inline: [0],
      Unfolding: (\ w :: GHC.Integer.Type.Integer ->
@@ -41,17 +41,17 @@ import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type bf9b4d13b1dbe96a83786d2e47d2e8c
                  case GHC.Integer.Type.smallInteger
                         ww2 of ww { GHC.Integer.Type.S# ww1 ->
                  ww1 } }) -}
-668dab77d1ca80c105d4d246ea5a4801
+762716c128312e451dd55e30fcb67483
   $wprimes' ::
     [GHC.Integer.Type.Integer]
     -> (# GHC.Integer.Type.Integer, [GHC.Integer.Type.Integer] #)
   {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
-8f69feb6fbac64f174dfef96a770c20b
+c5f6cc8ff73c9b571e9a40122c376f33
   factors ::
     [GHC.Integer.Type.Integer]
     -> GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
   {- Arity: 2, Strictness: <S,1*U><S,U> -}
-5cd4fd428cd2b9307c15bf6dbe37a119
+cb663eea2c71e24f86854198256b92a6
   numPrimeFactors ::
     GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
   {- Arity: 1, Strictness: <S,U>m1, Inline: INLINE[0],
@@ -59,32 +59,32 @@ import  -/  integer-gmp-1.0.0.0:GHC.Integer.Type bf9b4d13b1dbe96a83786d2e47d2e8c
                 (\ w :: GHC.Integer.Type.Integer ->
                  case PrimeFactors.$wnumPrimeFactors w of ww { DEFAULT ->
                  GHC.Integer.Type.S# ww }) -}
-30202377d9cfadbbcd3be511527e2d2e
+c00be63cbae34bba947989a30e64485f
   primeFactors ::
     GHC.Integer.Type.Integer -> [GHC.Integer.Type.Integer]
   {- Arity: 1,
      Unfolding: (PrimeFactors.factors PrimeFactors.primes) -}
-f6a57595ed359ec583c438bc4aaf1f38
+947b41392294712f487885104f9cbba6
   primes :: [GHC.Integer.Type.Integer]
   {- Unfolding: (case PrimeFactors.$wprimes'
                         PrimeFactors.primes1 of ww { (#,#) ww1 ww2 ->
                  GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2 }) -}
-f97b0dcb7a6d18859fd7ca6ed2fd93f6
+728c0c53c88e1a43becba6822c0c0ddb
   primes1 :: [GHC.Integer.Type.Integer]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Integer.Type.Integer
                    PrimeFactors.primes3
                    PrimeFactors.primes2) -}
-6511bfd96fa3c2280e26b4118a0e1d4c
+a37ec65aa1cce11b6de96846b17a3262
   primes2 :: [GHC.Integer.Type.Integer]
   {- Unfolding: (case GHC.Enum.$wenumDeltaInteger
                         PrimeFactors.primes4
                         PrimeFactors.primes3 of ww { (#,#) ww1 ww2 ->
                  GHC.Types.: @ GHC.Integer.Type.Integer ww1 ww2 }) -}
-7d121bb8ea85d82f9280ebd7910e43d5
+cc53d5541ed3d2d21dbfa8e52acd336c
   primes3 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 2) -}
-fc75b03933a144a845266640f108e709
+1ad73e14d110509f666eadee8ba62e8d
   primes4 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 3) -}
 vectorised variables:

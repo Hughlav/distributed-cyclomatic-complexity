@@ -1,6 +1,7 @@
 
 {-# LANGUAGE BangPatterns    #-}
 {-# LANGUAGE TemplateHaskell #-}
+{-# LANGUAGE OverloadedStrings #-}
 --{-# CPP #-}
 
 -- | use-haskell
@@ -29,6 +30,10 @@ import           PrimeFactors
 import           System.Environment                                 (getArgs)
 import           System.Exit
 import           Gitaccess
+import           Control.Exception
+import           System.CPUTime
+import           Text.Printf
+
 --import           Data.ByteString.Lazy hiding (putStrLn)
 --import           Data.ByteString hiding (putStrLn)
 
@@ -59,6 +64,7 @@ worker (manager, workQueue) = do
         [ match $ \n  -> do
             liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] given work: " ++ show n
             m <- liftIO $ doWork n
+            liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] complexity: " ++ show m
             send manager m   -- (doWork n)
             liftIO $ putStrLn $ "[Node " ++ (show us) ++ "] finished work."
             go us -- note the recursion this function is called again!
@@ -129,6 +135,7 @@ someFunc = do
       backend <- initializeBackend host port rtable
       commits <- liftIO $ getCommitList
       numComm <- liftIO $ numCommits commits
+      putStrLn $ "Num commits: " ++ show numComm
       startMaster backend $ \workers -> do
         result <- manager commits workers numComm
         liftIO $ print result

@@ -1,13 +1,13 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-14 23:13:51.82286 UTC
+2017-12-15 02:35:18.831361 UTC
 
 interface main@main:Main 7102
-  interface hash: 1131ea62464e07ef56331475de9a347b
-  ABI hash: 3932a928a0ac32ce4851e1c612d431fa
-  export-list hash: ca6e0a79a6faf6229ac341139bfe72cc
+  interface hash: bf61961df0fa29f1a9151a5f66b436f2
+  ABI hash: aac6aebec2b0ca97ae255cf454b28367
+  export-list hash: 3369b7be21d1172aee0f31c954ad6c36
   orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
-  flag hash: b45da84efbdc3f7d5e153d2bd6c75e9e
+  flag hash: 62d291676a4c8bbeecd3a38b9eec1b53
   sig of: Nothing
   used TH splices: False
   where
@@ -36,6 +36,7 @@ package dependencies: StateVar-1.1.0.2@State_01D7wYOBNQ78BZXP74Y9W2
                       bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
                       case-insensitive-1.2.0.5@casei_2v31fhDBMauKZYf5kDjlgw
                       cereal-0.4.1.1@cerea_LMaR4P6lFvNJtmY00msKYH
+                      clock-0.5.1@clock_Kq9ZQVq8AKsI7JE2IasxPj
                       comonad-4.2.7.2@comon_3qq1oi0moCkLkaCeMPf0Sy
                       connection-0.2.5@conne_0bxk9lk9cJnAzKHTuAbw3a
                       containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
@@ -52,9 +53,11 @@ package dependencies: StateVar-1.1.0.2@State_01D7wYOBNQ78BZXP74Y9W2
                       distributed-static-0.3.8@distr_J7SBnSxTH8p3y1CbcETiNw
                       distributed-process-0.6.6@distr_L1tyDqPpCb2AodTZ0AJ0pI
                       dlist-0.7.1.2@dlist_7AixcwRWCwX32HiPCcE7zz
+                      double-conversion-2.0.1.0@doubl_4ZA80Wwx0qnJ6wRrr6Yjzd
                       errors-2.0.1@error_BbQDeZg9K7NILeiAZIGZNr
                       exceptions-0.8.0.2@excep_DxmHQqAeYkJ0KUsVVnEGIO
                       filepath-1.4.0.0@filep_KsGE6pHE5eZHSN90ZVax6A
+                      formatting-6.2.2@forma_GY6BmdLiXJUA99HjKdEBBB
                       foundation-0.0.17@found_Ifqp0gUZiOc2IZ9WGKZXO8
                       free-4.12.1@free_9a92HYkdANYCdZdipwGzq6 ghc-prim-0.4.0.0
                       github-0.18@githu_8rYTIklCOU9AvjOwlVUaam
@@ -93,12 +96,13 @@ package dependencies: StateVar-1.1.0.2@State_01D7wYOBNQ78BZXP74Y9W2
                       syb-0.5.1@syb_8qmIMcBFhWM7BKRUTFb5M4
                       tagged-0.8.2@tagge_4zanMqQLQHpBO0ZYm7KGkc template-haskell-2.10.0.0
                       text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG
+                      text-format-0.3.1.1@textf_1wUNjFhXI5CIIgFNBNw931
                       time-1.5.0.1@time_AXTdBF9VRQoBOqJT6qtmVH
                       tls-1.3.5@tls_CfdZFJ9ykZr4E1Z9kkKw9N
                       transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
                       unix-2.7.1.0@unix_A3WgcI5QiHK4PDo4jSYdwQ
                       unordered-containers-0.2.5.1@unord_GEo5atLhXsqD6lKQtRnTup
-                      use-cloudhaskell-0.1.0.0@usecl_LbyoIXb6p756ZYzHnVxUNm
+                      use-cloudhaskell-0.1.0.0@usecl_A3QMivhrxOhEyWWnOrdC7N
                       vector-instances-3.3.1@vecto_0RBux1mNjSWCNzdIh7YW7h
                       vector-binary-instances-0.2.1.0@vecto_4f6uxQmtb0E11de33Dn7EJ
                       vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ
@@ -159,6 +163,7 @@ family instance modules: adjunctions-4.2.2@adjun_7RfR0mwcgjbEmWiYqgTCIy:Data.Fun
                          basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.Types.OffsetSize
                          basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.UArray.Base
                          basement-0.0.4@basem_4Xz3pC3en8VEvzR8UPe6NC:Basement.UTF8.Base
+                         clock-0.5.1@clock_Kq9ZQVq8AKsI7JE2IasxPj:System.Clock
                          containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
                          containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
                          containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
@@ -235,29 +240,153 @@ family instance modules: adjunctions-4.2.2@adjun_7RfR0mwcgjbEmWiYqgTCIy:Data.Fun
                          text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Lazy
                          unordered-containers-0.2.5.1@unord_GEo5atLhXsqD6lKQtRnTup:Data.HashMap.Base
                          unordered-containers-0.2.5.1@unord_GEo5atLhXsqD6lKQtRnTup:Data.HashSet
-                         use-cloudhaskell-0.1.0.0@usecl_LbyoIXb6p756ZYzHnVxUNm:Gitaccess
+                         use-cloudhaskell-0.1.0.0@usecl_A3QMivhrxOhEyWWnOrdC7N:Gitaccess
                          vector-instances-3.3.1@vecto_0RBux1mNjSWCNzdIh7YW7h:Data.Vector.Instances
                          vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector
                          vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Primitive
                          vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Storable
                          vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Unboxed
                          vector-0.10.12.3@vecto_JrQt7SYKOQF2foH4Ugm8MQ:Data.Vector.Unboxed.Base
+import  -/  base-4.8.1.0:Control.Exception ad90805da5ad455017893997acf84ba2
 import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  base-4.8.1.0:System.CPUTime 954ded792de605e2bd0f277c6ce22c48
+import  -/  base-4.8.1.0:Text.Printf ad7802849661c053618cc511ab4272b4
+import  -/  clock-0.5.1@clock_Kq9ZQVq8AKsI7JE2IasxPj:System.Clock ba9121b22b8afa24078b9d72408bdcc1
+import  -/  deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o:Control.DeepSeq 8807ca16fa7d5b79f3f5bf3015869ad3
+import  -/  formatting-6.2.2@forma_GY6BmdLiXJUA99HjKdEBBB:Formatting 652bf9cbc75a14e3cb0195afc4ef14d2
+import  -/  formatting-6.2.2@forma_GY6BmdLiXJUA99HjKdEBBB:Formatting.Clock 0d34eaaf8e24dbf1c5660f5182134ebd
+import  -/  formatting-6.2.2@forma_GY6BmdLiXJUA99HjKdEBBB:Formatting.Internal ba4ce490f3572bec60087d14b31a0229
 import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
-import  -/  use-cloudhaskell-0.1.0.0@usecl_LbyoIXb6p756ZYzHnVxUNm:Lib c071b140704b96e1f71f0814c3e9266f
-02c9ef289a6a18c930f362b08240f4fb
+import  -/  use-cloudhaskell-0.1.0.0@usecl_A3QMivhrxOhEyWWnOrdC7N:Lib 5d4063091d56e67f4ffe4766f38bfe9d
+73bcec37efe8450affaaaaa7a593f45c
+  $dIsString2 :: GHC.Types.IO () ~ GHC.Types.IO ()
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ (GHC.Types.IO ())
+                   @ (GHC.Types.IO ())
+                   @~ <GHC.Types.IO ()>_N) -}
+c6d72e4ba09afc97b2a99b7993182906
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
-                Lib.someFunc1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-eb3ff78fad6ad3f1ad7f8097cdebc2f9
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+7aa82ddf098e38e3c069c921d23bf143
   main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.Prim.newAlignedPinnedByteArray#
+                        @ GHC.Prim.RealWorld
+                        16
+                        8
+                        s of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.unsafeFreezeByteArray#
+                        @ GHC.Prim.RealWorld
+                        ipv1
+                        ipv of ds3 { (#,#) ipv2 ipv3 ->
+                 let {
+                   a18 :: GHC.Prim.Addr# = GHC.Prim.byteArrayContents# ipv3
+                 } in
+                 case {__pkg_ccall_GC clock-0.5.1@clock_Kq9ZQVq8AKsI7JE2IasxPj clock_gettime GHC.Prim.Int#
+                                                                                             -> GHC.Prim.Addr#
+                                                                                             -> GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld
+                                                                                             -> (# GHC.Prim.State#
+                                                                                                     GHC.Prim.RealWorld #)}
+                        1
+                        a18
+                        ipv2 of wild1 { (##) ds ->
+                 case GHC.Prim.readInt64OffAddr#
+                        @ GHC.Prim.RealWorld
+                        a18
+                        0
+                        ds of ds1 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.readInt64OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# a18 8)
+                        0
+                        ipv4 of ds5 { (#,#) ipv6 ipv7 ->
+                 case GHC.Prim.touch#
+                        @ GHC.Prim.ByteArray#
+                        ipv3
+                        ipv6 of s4 { DEFAULT ->
+                 case Lib.someFunc1 s4 of ds4 { (#,#) ipv11 ipv12 ->
+                 case GHC.Prim.newAlignedPinnedByteArray#
+                        @ GHC.Prim.RealWorld
+                        16
+                        8
+                        ipv11 of ds6 { (#,#) ipv13 ipv14 ->
+                 case GHC.Prim.unsafeFreezeByteArray#
+                        @ GHC.Prim.RealWorld
+                        ipv14
+                        ipv13 of ds7 { (#,#) ipv15 ipv16 ->
+                 let {
+                   a1 :: GHC.Prim.Addr# = GHC.Prim.byteArrayContents# ipv16
+                 } in
+                 case {__pkg_ccall_GC clock-0.5.1@clock_Kq9ZQVq8AKsI7JE2IasxPj clock_gettime GHC.Prim.Int#
+                                                                                             -> GHC.Prim.Addr#
+                                                                                             -> GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld
+                                                                                             -> (# GHC.Prim.State#
+                                                                                                     GHC.Prim.RealWorld #)}
+                        1
+                        a1
+                        ipv15 of wild2 { (##) ds8 ->
+                 case GHC.Prim.readInt64OffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0
+                        ds8 of ds9 { (#,#) ipv17 ipv18 ->
+                 case GHC.Prim.readInt64OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# a1 8)
+                        0
+                        ipv17 of ds10 { (#,#) ipv19 ipv20 ->
+                 case GHC.Prim.touch#
+                        @ GHC.Prim.ByteArray#
+                        ipv16
+                        ipv19 of s1 { DEFAULT ->
+                 (Formatting.Clock.timeSpecs1
+                    @ (GHC.Types.IO ())
+                    Main.main2
+                    (System.Clock.TimeSpec ipv5 ipv7)
+                    (System.Clock.TimeSpec ipv18 ipv20))
+                   `cast`
+                 (GHC.Types.NTCo:IO[0] <()>_R)
+                   s1 } } } } } } } } } } } } }) -}
+18a3fdc7d427e5597ba9c40d87f25728
+  main2 :: Data.Text.Internal.Builder.Builder -> GHC.Types.IO ()
+  {- Arity: 1,
+     Unfolding: (\ a1 :: Data.Text.Internal.Builder.Builder[OneShot] ->
+                 Formatting.Internal.$wa
+                   @ (GHC.Types.IO ())
+                   @ (GHC.Types.IO ())
+                   Main.$dIsString2
+                   Main.main3
+                   (\ a2 :: Data.Text.Internal.Builder.Builder[OneShot]
+                      eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                    Data.Text.Lazy.IO.appendFile2
+                      GHC.IO.Handle.FD.stdout
+                      (Data.Text.Internal.Builder.$wtoLazyTextWith
+                         112
+                         (Data.Text.Internal.Builder.append a1 a2))
+                      eta)
+                     `cast`
+                   (<Data.Text.Internal.Builder.Builder>_R
+                    ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+7712229fed6ec86da7ab7126489dc9cc
+  main3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+56fb846431e2bfa7e25a584ec591574a
+  main4 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
   {- Arity: 1,
      Unfolding: (GHC.TopHandler.runMainIO1
                    @ ()
-                   Lib.someFunc1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
 vectorised variables:
 vectorised tycons:
 vectorised reused tycons:

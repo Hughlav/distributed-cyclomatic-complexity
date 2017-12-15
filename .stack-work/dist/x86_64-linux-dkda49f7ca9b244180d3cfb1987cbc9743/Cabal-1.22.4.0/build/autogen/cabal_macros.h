@@ -28,6 +28,20 @@
   (major1) == 0 && (major2) <  10 || \
   (major1) == 0 && (major2) == 10 && (minor) <= 6)
 
+/* package clock-0.5.1 */
+#define VERSION_clock "0.5.1"
+#define MIN_VERSION_clock(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  5 || \
+  (major1) == 0 && (major2) == 5 && (minor) <= 1)
+
+/* package deepseq-1.4.1.1 */
+#define VERSION_deepseq "1.4.1.1"
+#define MIN_VERSION_deepseq(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  4 || \
+  (major1) == 1 && (major2) == 4 && (minor) <= 1)
+
 /* package directory-1.2.2.0 */
 #define VERSION_directory "1.2.2.0"
 #define MIN_VERSION_directory(major1,major2,minor) (\
@@ -55,6 +69,13 @@
   (major1) <  1 || \
   (major1) == 1 && (major2) <  4 || \
   (major1) == 1 && (major2) == 4 && (minor) <= 0)
+
+/* package formatting-6.2.2 */
+#define VERSION_formatting "6.2.2"
+#define MIN_VERSION_formatting(major1,major2,minor) (\
+  (major1) <  6 || \
+  (major1) == 6 && (major2) <  2 || \
+  (major1) == 6 && (major2) == 2 && (minor) <= 2)
 
 /* package github-0.18 */
 #define VERSION_github "0.18"
@@ -182,5 +203,5 @@
   (major1) == 2 && (major2) <  24 || \
   (major1) == 2 && (major2) == 24 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "usecl_LbyoIXb6p756ZYzHnVxUNm"
+#define CURRENT_PACKAGE_KEY "usecl_A3QMivhrxOhEyWWnOrdC7N"
 

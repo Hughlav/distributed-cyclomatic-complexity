@@ -1,11 +1,11 @@
 
 ==================== FINAL INTERFACE ====================
-2017-12-14 23:27:38.757725 UTC
+2017-12-15 02:24:39.592161 UTC
 
-interface usecl_LbyoIXb6p756ZYzHnVxUNm:Gitaccess [family instance module] 7102
-  interface hash: 0ab153cb3ef75b04e8957906c8225d46
-  ABI hash: 0fa8e1d4ebc620f78f8e159d91df2c04
-  export-list hash: ddf109d6fe4d5906014c807dfbe2b2ed
+interface usecl_A3QMivhrxOhEyWWnOrdC7N:Gitaccess [family instance module] 7102
+  interface hash: f4c8f61f45d809011c752374cc0ae1f2
+  ABI hash: 27cc73039a0e678e72c8066744cd052b
+  export-list hash: cb6bfc7ce51abb2326f79db5ebc4e850
   orphan hash: 351a93628a646611f9edfce05433e01c
   flag hash: eb96c0062fcc87e22def0e200588cd12
   sig of: Nothing
@@ -16,7 +16,6 @@ exports:
   Gitaccess.getCommit
   Gitaccess.getCommitList
   Gitaccess.getRepo
-  Gitaccess.initaliseWorker
   Gitaccess.main
   Gitaccess.numCommits
   Gitaccess.parseString
@@ -276,7 +275,7 @@ import  -/  text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text 9ed44a38d0c810147
 import  -/  text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Internal 310cc6643c5bd4a0995493e4216d08c6
 import  -/  text-1.2.2.0@text_BKzOMwCPkuv5n8xwLM3CQG:Data.Text.Show bf8b25232e53fb8eeb55e29a22ebf868
 import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.Class 9605d683dd45bfe8c9f8bdf894951b7c
-2cd4d38335a133b86f95dace3c9ee7a9
+1f53ee760dcca1ee8254bf6c83692e15
   $fConstructorBlock :: GHC.Generics.Constructor Gitaccess.C1_0Block
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -285,10 +284,10 @@ import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.C
                   Gitaccess.$fConstructorBlock_$cconName
                   Gitaccess.$fConstructorBlock_$s$dmconFixity
                   Gitaccess.$fConstructorBlock_$cconIsRecord -}
-6c8a338e5ba24879d0474100bd51b36e
+d3d727040097050d8981b873e4a7d11e
   $fConstructorBlock1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Block"#) -}
-2cd4d38335a133b86f95dace3c9ee7a9
+1f53ee760dcca1ee8254bf6c83692e15
   $fConstructorBlock_$cconIsRecord ::
     t Gitaccess.C1_0Block f a -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
@@ -298,7 +297,7 @@ import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.C
                    @ a12
                    ds :: t Gitaccess.C1_0Block f a12 ->
                  GHC.Types.True) -}
-2cd4d38335a133b86f95dace3c9ee7a9
+1f53ee760dcca1ee8254bf6c83692e15
   $fConstructorBlock_$cconName ::
     t Gitaccess.C1_0Block f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -308,7 +307,7 @@ import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.C
                    @ a12
                    ds :: t Gitaccess.C1_0Block f a12 ->
                  Gitaccess.$fConstructorBlock1) -}
-2cd4d38335a133b86f95dace3c9ee7a9
+1f53ee760dcca1ee8254bf6c83692e15
   $fConstructorBlock_$s$dmconFixity ::
     t Gitaccess.C1_0Block f a -> GHC.Generics.Fixity
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
@@ -318,7 +317,7 @@ import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.C
                    @ a12
                    ds :: t Gitaccess.C1_0Block f a12 ->
                  GHC.Generics.Prefix) -}
-7e4f5a4bcf1aa2cb2f2bc599607d09a7
+72137a5bec21eaa6fe3885282929eb9f
   $fConstructorCommits ::
     GHC.Generics.Constructor Gitaccess.C1_0Commits
   DFunId[0]
@@ -328,10 +327,10 @@ import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.IO.C
                   Gitaccess.$fConstructorCommits_$cconName
                   Gitaccess.$fConstructorCommits_$s$dmconFixity
                   Gitaccess.$fConstructorCommits_$cconIsRecord -}
-bdd344ce486c9de1576b940a8e5bf8b1
+65d00b88d78f55014798193772cb9493
   $fConstructorCommits1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Commits"#) -}
-7e4f5a4bcf1aa2cb2f2bc599607d09a7
+72137a5bec21eaa6fe3885282929eb9f
   $fConstructorCommits_$cconIsRecord ::
     t Gitaccess.C1_0Commits f a -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
@@ -341,7 +340,7 @@ bdd344ce486c9de1576b940a8e5bf8b1
                    @ a12
                    ds :: t Gitaccess.C1_0Commits f a12 ->
                  GHC.Types.True) -}
-7e4f5a4bcf1aa2cb2f2bc599607d09a7
+72137a5bec21eaa6fe3885282929eb9f
   $fConstructorCommits_$cconName ::
     t Gitaccess.C1_0Commits f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -351,7 +350,7 @@ bdd344ce486c9de1576b940a8e5bf8b1
                    @ a12
                    ds :: t Gitaccess.C1_0Commits f a12 ->
                  Gitaccess.$fConstructorCommits1) -}
-7e4f5a4bcf1aa2cb2f2bc599607d09a7
+72137a5bec21eaa6fe3885282929eb9f
   $fConstructorCommits_$s$dmconFixity ::
     t Gitaccess.C1_0Commits f a -> GHC.Generics.Fixity
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
@@ -361,7 +360,7 @@ bdd344ce486c9de1576b940a8e5bf8b1
                    @ a12
                    ds :: t Gitaccess.C1_0Commits f a12 ->
                  GHC.Generics.Prefix) -}
-65a4650dc002094f89bdcede7741533b
+a85a7adf28c581a50ee742d161e355cf
   $fDatatypeBlock :: GHC.Generics.Datatype Gitaccess.D1Block
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -370,10 +369,10 @@ bdd344ce486c9de1576b940a8e5bf8b1
                   Gitaccess.$fDatatypeBlock_$cdatatypeName
                   Gitaccess.$fDatatypeBlock_$cmoduleName
                   Gitaccess.$fDatatypeBlock_$s$dmisNewtype -}
-ab8d7cddfe8c88fab842e8e585eefbd8
+a9169140fcaabcb1ab3397b18663697f
   $fDatatypeBlock1 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Gitaccess"#) -}
-65a4650dc002094f89bdcede7741533b
+a85a7adf28c581a50ee742d161e355cf
   $fDatatypeBlock_$cdatatypeName ::
     t Gitaccess.D1Block f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -383,7 +382,7 @@ ab8d7cddfe8c88fab842e8e585eefbd8
                    @ a12
                    ds :: t Gitaccess.D1Block f a12 ->
                  Gitaccess.$fConstructorBlock1) -}
-65a4650dc002094f89bdcede7741533b
+a85a7adf28c581a50ee742d161e355cf
   $fDatatypeBlock_$cmoduleName ::
     t Gitaccess.D1Block f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -393,7 +392,7 @@ ab8d7cddfe8c88fab842e8e585eefbd8
                    @ a12
                    ds :: t Gitaccess.D1Block f a12 ->
                  Gitaccess.$fDatatypeBlock1) -}
-65a4650dc002094f89bdcede7741533b
+a85a7adf28c581a50ee742d161e355cf
   $fDatatypeBlock_$s$dmisNewtype ::
     t Gitaccess.D1Block f a -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
@@ -403,7 +402,7 @@ ab8d7cddfe8c88fab842e8e585eefbd8
                    @ a12
                    ds :: t Gitaccess.D1Block f a12 ->
                  GHC.Types.False) -}
-f659fd677cb7b0ba41f35b0e4443d845
+6cd593076ca4ee4004b26c014d5e9725
   $fDatatypeCommits :: GHC.Generics.Datatype Gitaccess.D1Commits
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -412,7 +411,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                   Gitaccess.$fDatatypeCommits_$cdatatypeName
                   Gitaccess.$fDatatypeCommits_$cmoduleName
                   Gitaccess.$fDatatypeCommits_$s$dmisNewtype -}
-f659fd677cb7b0ba41f35b0e4443d845
+6cd593076ca4ee4004b26c014d5e9725
   $fDatatypeCommits_$cdatatypeName ::
     t Gitaccess.D1Commits f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -422,7 +421,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                    @ a12
                    ds :: t Gitaccess.D1Commits f a12 ->
                  Gitaccess.$fConstructorCommits1) -}
-f659fd677cb7b0ba41f35b0e4443d845
+6cd593076ca4ee4004b26c014d5e9725
   $fDatatypeCommits_$cmoduleName ::
     t Gitaccess.D1Commits f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -432,7 +431,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                    @ a12
                    ds :: t Gitaccess.D1Commits f a12 ->
                  Gitaccess.$fDatatypeBlock1) -}
-f659fd677cb7b0ba41f35b0e4443d845
+6cd593076ca4ee4004b26c014d5e9725
   $fDatatypeCommits_$s$dmisNewtype ::
     t Gitaccess.D1Commits f a -> GHC.Types.Bool
   {- Arity: 1, HasNoCafRefs, Strictness: <L,A>,
@@ -442,7 +441,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                    @ a12
                    ds :: t Gitaccess.D1Commits f a12 ->
                  GHC.Types.False) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fFromJSONBlock :: Data.Aeson.Types.Class.FromJSON Gitaccess.Block
   DFunId[0]
   {- Arity: 1, Strictness: <L,1*U>, Inline: INLINE (sat-args=0),
@@ -451,7 +450,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                   `cast`
                 (Sym (Data.Aeson.Types.Class.NTCo:FromJSON[0]
                           <Gitaccess.Block>_N)) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+94ade0635ae11970970aea1e5c5383bf
   $fFromJSONBlock1 ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser
@@ -473,7 +472,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                                                      (GHC.Generics.Rec0 GHC.Types.Int))))
             GHC.Prim.Any)
   {- Arity: 1, Strictness: <L,1*U> -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fFromJSONBlock_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser Gitaccess.Block
@@ -518,7 +517,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                    `cast`
                  (Sym (Data.Aeson.Types.Internal.NTCo:Parser[0]
                            <Gitaccess.Block>_R))) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fFromJSONBlock_$cto ::
     GHC.Generics.Rep Gitaccess.Block x -> Gitaccess.Block
   {- Arity: 1, HasNoCafRefs,
@@ -620,7 +619,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                              <GHC.Generics.K1 GHC.Generics.R GHC.Types.Int>_R <x>_N)
                         (GHC.Generics.NTCo:K1[0]
                              <GHC.Generics.R>_P <GHC.Types.Int>_R <x>_P)) } } }) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fFromJSONCommits ::
     Data.Aeson.Types.Class.FromJSON Gitaccess.Commits
   DFunId[0]
@@ -630,12 +629,12 @@ f659fd677cb7b0ba41f35b0e4443d845
                   `cast`
                 (Sym (Data.Aeson.Types.Class.NTCo:FromJSON[0]
                           <Gitaccess.Commits>_N)) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fFromJSONCommits_$cparseJSON ::
     Data.Aeson.Types.Internal.Value
     -> Data.Aeson.Types.Internal.Parser Gitaccess.Commits
   {- Arity: 1, Strictness: <L,1*U> -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fGenericBlock :: GHC.Generics.Generic Gitaccess.Block
   DFunId[0]
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -643,7 +642,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                   @ Gitaccess.Block
                   Gitaccess.$fGenericBlock_$cfrom
                   Gitaccess.$fFromJSONBlock_$cto -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fGenericBlock_$cfrom ::
     Gitaccess.Block -> GHC.Generics.Rep Gitaccess.Block x
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(U,U,U,U)>m,
@@ -778,7 +777,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                                                                                  GHC.Generics.R
                                                                                  GHC.Types.Int)))>_R))
                            (Sub (Sym (Gitaccess.Rep_Block[0])))) <x>_N) }) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fGenericCommits :: GHC.Generics.Generic Gitaccess.Commits
   DFunId[0]
   {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -786,7 +785,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                   @ Gitaccess.Commits
                   Gitaccess.$fGenericCommits_$cfrom
                   Gitaccess.$fGenericCommits_$cto -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fGenericCommits_$cfrom ::
     Gitaccess.Commits -> GHC.Generics.Rep Gitaccess.Commits x
   {- Arity: 1, HasNoCafRefs, Strictness: <S(LSS),1*U(U,U,U)>m,
@@ -890,7 +889,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                                                                                  GHC.Generics.R
                                                                                  Data.Text.Internal.Text)))>_R))
                            (Sub (Sym (Gitaccess.Rep_Commits[0])))) <x>_N) }) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fGenericCommits_$cto ::
     GHC.Generics.Rep Gitaccess.Commits x -> Gitaccess.Commits
   {- Arity: 1, HasNoCafRefs,
@@ -971,7 +970,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                              <GHC.Generics.K1 GHC.Generics.R Data.Text.Internal.Text>_R <x>_N)
                         (GHC.Generics.NTCo:K1[0]
                              <GHC.Generics.R>_P <Data.Text.Internal.Text>_R <x>_P)) } }) -}
-bf9db8d73dcb3d9d45cb47e020f2697f
+7ae1ffa43ef7648e57adc59bb0ae8f4d
   $fSelectorBlock :: GHC.Generics.Selector Gitaccess.S1_0_0Block
   DFunId[0]
   {- Arity: 1, Strictness: <L,A>, Inline: INLINE (sat-args=0),
@@ -979,7 +978,7 @@ bf9db8d73dcb3d9d45cb47e020f2697f
                 Gitaccess.$fSelectorBlock_$cselName
                   `cast`
                 (Sym (GHC.Generics.NTCo:Selector[0] <Gitaccess.S1_0_0Block>_N)) -}
-83809dcc3c15296d9e678d310757396f
+03d3ed6e10fe8aeccd3d36399f50576c
   $fSelectorBlock0 :: GHC.Generics.Selector Gitaccess.S1_0_1Block
   DFunId[0]
   {- Arity: 1, Strictness: <L,A>, Inline: INLINE (sat-args=0),
@@ -987,7 +986,7 @@ bf9db8d73dcb3d9d45cb47e020f2697f
                 Gitaccess.$fSelectorBlock0_$cselName
                   `cast`
                 (Sym (GHC.Generics.NTCo:Selector[0] <Gitaccess.S1_0_1Block>_N)) -}
-83809dcc3c15296d9e678d310757396f
+03d3ed6e10fe8aeccd3d36399f50576c
   $fSelectorBlock0_$cselName ::
     t Gitaccess.S1_0_1Block f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -997,7 +996,7 @@ bf9db8d73dcb3d9d45cb47e020f2697f
                    @ a12
                    ds :: t Gitaccess.S1_0_1Block f a12 ->
                  Gitaccess.$fSelectorBlock5) -}
-d1ffe9a7a55b989494a8abca7aed03d3
+decb7a7cdfd5054b15748392be5fa403
   $fSelectorBlock1 :: GHC.Generics.Selector Gitaccess.S1_0_2Block
   DFunId[0]
   {- Arity: 1, Strictness: <L,A>, Inline: INLINE (sat-args=0),
@@ -1005,7 +1004,7 @@ d1ffe9a7a55b989494a8abca7aed03d3
                 Gitaccess.$fSelectorBlock1_$cselName
                   `cast`
                 (Sym (GHC.Generics.NTCo:Selector[0] <Gitaccess.S1_0_2Block>_N)) -}
-d1ffe9a7a55b989494a8abca7aed03d3
+decb7a7cdfd5054b15748392be5fa403
   $fSelectorBlock1_$cselName ::
     t Gitaccess.S1_0_2Block f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -1015,7 +1014,7 @@ d1ffe9a7a55b989494a8abca7aed03d3
                    @ a12
                    ds :: t Gitaccess.S1_0_2Block f a12 ->
                  Gitaccess.$fSelectorBlock6) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+b78bd84fa49676e25e741bef10c1b087
   $fSelectorBlock2 :: GHC.Generics.Selector Gitaccess.S1_0_3Block
   DFunId[0]
   {- Arity: 1, Strictness: <L,A>, Inline: INLINE (sat-args=0),
@@ -1023,7 +1022,7 @@ d1ffe9a7a55b989494a8abca7aed03d3
                 Gitaccess.$fSelectorBlock2_$cselName
                   `cast`
                 (Sym (GHC.Generics.NTCo:Selector[0] <Gitaccess.S1_0_3Block>_N)) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+b78bd84fa49676e25e741bef10c1b087
   $fSelectorBlock2_$cselName ::
     t Gitaccess.S1_0_3Block f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -1033,19 +1032,19 @@ d1ffe9a7a55b989494a8abca7aed03d3
                    @ a12
                    ds :: t Gitaccess.S1_0_3Block f a12 ->
                  Gitaccess.$fSelectorBlock7) -}
-a937ceb2de77132ab71827a9cfdfc501
+94ad731da16a09a178ab9e48cc835850
   $fSelectorBlock4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "complexity"#) -}
-9c6712df29c0b0b7ee675e6477919f9d
+b991936333dbb46d2bc8dfec902dc080
   $fSelectorBlock5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "name"#) -}
-a7cbda9c60875d7439a83c0860a67f41
+561a0765079567bbbbaeb60e6cc65bb9
   $fSelectorBlock6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "lineno"#) -}
-407632bf8e29529d456a9edc7dc379d3
+01fb48a632745fb5f66acae31335ff91
   $fSelectorBlock7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "col"#) -}
-bf9db8d73dcb3d9d45cb47e020f2697f
+7ae1ffa43ef7648e57adc59bb0ae8f4d
   $fSelectorBlock_$cselName ::
     t Gitaccess.S1_0_0Block f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -1055,7 +1054,7 @@ bf9db8d73dcb3d9d45cb47e020f2697f
                    @ a12
                    ds :: t Gitaccess.S1_0_0Block f a12 ->
                  Gitaccess.$fSelectorBlock4) -}
-759b54794882bc178292f82d59d2265f
+87d15a65e974c88e7b5cb35f9599a59f
   $fSelectorCommits :: GHC.Generics.Selector Gitaccess.S1_0_0Commits
   DFunId[0]
   {- Arity: 1, Strictness: <L,A>, Inline: INLINE (sat-args=0),
@@ -1064,7 +1063,7 @@ bf9db8d73dcb3d9d45cb47e020f2697f
                   `cast`
                 (Sym (GHC.Generics.NTCo:Selector[0]
                           <Gitaccess.S1_0_0Commits>_N)) -}
-e002885b3cbf48b8b0328e4bcb377cc4
+2594e00734cef42a5fb6863b47b71f9d
   $fSelectorCommits0 :: GHC.Generics.Selector Gitaccess.S1_0_1Commits
   DFunId[0]
   {- Arity: 1, Strictness: <L,A>, Inline: INLINE (sat-args=0),
@@ -1073,7 +1072,7 @@ e002885b3cbf48b8b0328e4bcb377cc4
                   `cast`
                 (Sym (GHC.Generics.NTCo:Selector[0]
                           <Gitaccess.S1_0_1Commits>_N)) -}
-e002885b3cbf48b8b0328e4bcb377cc4
+2594e00734cef42a5fb6863b47b71f9d
   $fSelectorCommits0_$cselName ::
     t Gitaccess.S1_0_1Commits f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -1083,7 +1082,7 @@ e002885b3cbf48b8b0328e4bcb377cc4
                    @ a12
                    ds :: t Gitaccess.S1_0_1Commits f a12 ->
                  Gitaccess.$fSelectorCommits3) -}
-730bfb79ed57ff2c88e324154d7c317c
+0e452657ce5d1b3eb76ceaa4e2766c16
   $fSelectorCommits1 :: GHC.Generics.Selector Gitaccess.S1_0_2Commits
   DFunId[0]
   {- Arity: 1, Strictness: <L,A>, Inline: INLINE (sat-args=0),
@@ -1092,7 +1091,7 @@ e002885b3cbf48b8b0328e4bcb377cc4
                   `cast`
                 (Sym (GHC.Generics.NTCo:Selector[0]
                           <Gitaccess.S1_0_2Commits>_N)) -}
-730bfb79ed57ff2c88e324154d7c317c
+0e452657ce5d1b3eb76ceaa4e2766c16
   $fSelectorCommits1_$cselName ::
     t Gitaccess.S1_0_2Commits f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -1102,16 +1101,16 @@ e002885b3cbf48b8b0328e4bcb377cc4
                    @ a12
                    ds :: t Gitaccess.S1_0_2Commits f a12 ->
                  Gitaccess.$fSelectorCommits4) -}
-82cbebb5c8977dbc8d7c8a5d3eebf43b
+7dc21e105e4971649bb7f9c78ec210f4
   $fSelectorCommits2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "blocks"#) -}
-3da8668c14eb0caf4944c6e6438b6e53
+8fa5c8c6db7d92839db4d39aa0c8ce91
   $fSelectorCommits3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "path"#) -}
-5e17b8f7b38fbd393273e926f444dc69
+2b686f8e3eb6ca4c1b385f1d7cb8f73f
   $fSelectorCommits4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "types"#) -}
-759b54794882bc178292f82d59d2265f
+87d15a65e974c88e7b5cb35f9599a59f
   $fSelectorCommits_$cselName ::
     t Gitaccess.S1_0_0Commits f a -> [GHC.Types.Char]
   {- Arity: 1, Strictness: <L,A>,
@@ -1121,7 +1120,7 @@ e002885b3cbf48b8b0328e4bcb377cc4
                    @ a12
                    ds :: t Gitaccess.S1_0_0Commits f a12 ->
                  Gitaccess.$fSelectorCommits2) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fShowBlock :: GHC.Show.Show Gitaccess.Block
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1130,35 +1129,35 @@ e002885b3cbf48b8b0328e4bcb377cc4
                   Gitaccess.$fShowBlock_$cshowsPrec
                   Gitaccess.$fShowBlock_$cshow
                   Gitaccess.$fShowBlock_$cshowList -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fShowBlock1 :: Gitaccess.Block -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (\ w :: Gitaccess.Block w1 :: GHC.Base.String ->
                  case w of ww { Gitaccess.Block ww1 ww2 ww3 ww4 ->
                  case ww2 of ww5 { Data.Text.Internal.Text ww6 ww7 ww8 ->
                  Gitaccess.$w$cshowsPrec 0 ww1 ww6 ww7 ww8 ww3 ww4 w1 } }) -}
-3a95e2ed3b532347bedac6cdcaea1d64
+41072d286b0713bfd9cff1037cc59330
   $fShowBlock2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "Block {"#) -}
-a24b175c2a9c66698ac883a022c14592
+53345338c95a9359c72ad9c2843e2309
   $fShowBlock3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
-426a928413028fa0f657aaa94baa5c29
+1c84922efaded8f05556d766ee9812fc
   $fShowBlock4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "col = "#) -}
-39dc2cdafdd864b35cc0eccfddddd22f
+c844cd570215c63b2dba956336262953
   $fShowBlock5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "lineno = "#) -}
-b0be2da65bc768b6892fd1b4742e8913
+2d7600cf4093ea27f37cdecee933ac23
   $fShowBlock6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "name = "#) -}
-f12a3efcf322dc6dd1532082c3914ae6
+a3593f579fb8d4dd00a20dc3c2ebf1e6
   $fShowBlock7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
-7db6719a5779eb9e111c9c619c67a74c
+6d3f63645f734026181f983e00a469f3
   $fShowBlock8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "complexity = "#) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fShowBlock_$cshow :: Gitaccess.Block -> GHC.Base.String
   {- Arity: 1,
      Strictness: <S(LSLL),1*U(1*U(U),U(U,U,U),1*U(U),1*U(U))>,
@@ -1168,13 +1167,13 @@ f12a3efcf322dc6dd1532082c3914ae6
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fShowBlock_$cshowList :: [Gitaccess.Block] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Gitaccess.Block
                    Gitaccess.$fShowBlock1) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fShowBlock_$cshowsPrec ::
     GHC.Types.Int -> Gitaccess.Block -> GHC.Show.ShowS
   {- Arity: 3,
@@ -1188,7 +1187,7 @@ f12a3efcf322dc6dd1532082c3914ae6
                  case w1 of ww2 { Gitaccess.Block ww3 ww4 ww5 ww6 ->
                  case ww4 of ww7 { Data.Text.Internal.Text ww8 ww9 ww10 ->
                  Gitaccess.$w$cshowsPrec ww1 ww3 ww8 ww9 ww10 ww5 ww6 w2 } } }) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fShowCommits :: GHC.Show.Show Gitaccess.Commits
   DFunId[0]
   {- Strictness: m, Inline: [ALWAYS] CONLIKE,
@@ -1197,7 +1196,7 @@ f12a3efcf322dc6dd1532082c3914ae6
                   Gitaccess.$fShowCommits_$cshowsPrec
                   Gitaccess.$fShowCommits_$cshow
                   Gitaccess.$fShowCommits_$cshowList -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fShowCommits1 :: Gitaccess.Commits -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (\ w :: Gitaccess.Commits w1 :: GHC.Base.String ->
@@ -1214,7 +1213,7 @@ f12a3efcf322dc6dd1532082c3914ae6
                    ww10
                    ww11
                    w1 } } }) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fShowCommits_$cshow :: Gitaccess.Commits -> GHC.Base.String
   {- Arity: 1, Strictness: <S(LSS),1*U(1*U,U(U,U,U),U(U,U,U))>,
      Unfolding: InlineRule (1, True, False)
@@ -1223,13 +1222,13 @@ f12a3efcf322dc6dd1532082c3914ae6
                    GHC.Show.shows18
                    x
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fShowCommits_$cshowList :: [Gitaccess.Commits] -> GHC.Show.ShowS
   {- Arity: 2,
      Unfolding: (GHC.Show.showList__
                    @ Gitaccess.Commits
                    Gitaccess.$fShowCommits1) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fShowCommits_$cshowsPrec ::
     GHC.Types.Int -> Gitaccess.Commits -> GHC.Show.ShowS
   {- Arity: 3,
@@ -1253,7 +1252,7 @@ f12a3efcf322dc6dd1532082c3914ae6
                    ww12
                    ww13
                    w2 } } } }) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fToJSONBlock :: Data.Aeson.Types.Class.ToJSON Gitaccess.Block
   DFunId[0]
   {- Arity: 1, Strictness: <S(LSLL),1*U(1*U(U),U,1*U(U),1*U(U))>m1,
@@ -1263,12 +1262,12 @@ f12a3efcf322dc6dd1532082c3914ae6
                   `cast`
                 (Sym (Data.Aeson.Types.Class.NTCo:ToJSON[0]
                           <Gitaccess.Block>_N)) -}
-fc571574e93e04627a6db31915deb63e
+509498028bf98f7734abd127a229bcab
   $fToJSONBlock1 :: Data.Text.Internal.Text
   {- Unfolding: (GHC.ST.runSTRep
                    @ Data.Text.Internal.Text
                    Gitaccess.$fToJSONBlock2) -}
-a0ea481d08400b9363682a61a338f613
+7cd5354fdfde49d93404cbe2cb81d7a8
   $fToJSONBlock10 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -1278,12 +1277,12 @@ a0ea481d08400b9363682a61a338f613
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
      Inline: [0] -}
-4eb9fba102fccffde561aa16f0e95c80
+a5fd4a638861a26ec1b4bad52277be7a
   $fToJSONBlock11 :: Data.Text.Internal.Text
   {- Unfolding: (GHC.ST.runSTRep
                    @ Data.Text.Internal.Text
                    Gitaccess.$fToJSONBlock12) -}
-25cd13da71c013ea727d3faec6b10395
+aaa5242ef59afee5278c1e351dace884
   $fToJSONBlock12 ::
     GHC.Prim.State# s1
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
@@ -1297,7 +1296,7 @@ a0ea481d08400b9363682a61a338f613
                    Gitaccess.$fSelectorBlock4
                    0
                    ipv }) -}
-db826d62308c897bc2e64167e7f73c4d
+799c94ba4a0b576b037635891ac8f310
   $fToJSONBlock13 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -1307,7 +1306,7 @@ db826d62308c897bc2e64167e7f73c4d
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
      Inline: [0] -}
-f43ad974cbb9d0863623c97d09372e83
+2f9d7652516f44b104f625c09cf4aa5e
   $fToJSONBlock2 ::
     GHC.Prim.State# s1
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
@@ -1321,10 +1320,10 @@ f43ad974cbb9d0863623c97d09372e83
                    Gitaccess.$fSelectorBlock7
                    0
                    ipv }) -}
-376526d02e0e1e1c72f6cb7bbca8eb77
+83e609cefd398cb223fc10f55b87996b
   $fToJSONBlock3 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 4) -}
-b9d17619618ec185762821295c3a077e
+592eb6868470efbed528534dcee029b6
   $fToJSONBlock4 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -1334,12 +1333,12 @@ b9d17619618ec185762821295c3a077e
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
      Inline: [0] -}
-f0cd0b3d08a815faaa31ce0f6685dd55
+7d1dff344003aa15153d038c0e2ee601
   $fToJSONBlock5 :: Data.Text.Internal.Text
   {- Unfolding: (GHC.ST.runSTRep
                    @ Data.Text.Internal.Text
                    Gitaccess.$fToJSONBlock6) -}
-5a2f3e99fe3479e97b16f078c6d12809
+baaa2fd48e0e93618f6d5134883071a7
   $fToJSONBlock6 ::
     GHC.Prim.State# s1
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
@@ -1353,7 +1352,7 @@ f0cd0b3d08a815faaa31ce0f6685dd55
                    Gitaccess.$fSelectorBlock6
                    0
                    ipv }) -}
-d0bfd63b8d8dce482ad334fa476357a6
+c7eef6434cf8835fb7998bead9898f9f
   $fToJSONBlock7 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -1363,12 +1362,12 @@ d0bfd63b8d8dce482ad334fa476357a6
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
      Inline: [0] -}
-5fe097786cccf383f55490b5e280ff26
+9156eeec2795c072f6db0d1b212131ee
   $fToJSONBlock8 :: Data.Text.Internal.Text
   {- Unfolding: (GHC.ST.runSTRep
                    @ Data.Text.Internal.Text
                    Gitaccess.$fToJSONBlock9) -}
-a9d0e5cd0a4be1e4843f1ebf78dad839
+612cd3f948ad3bc1b175d5530b482121
   $fToJSONBlock9 ::
     GHC.Prim.State# s1
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
@@ -1382,7 +1381,7 @@ a9d0e5cd0a4be1e4843f1ebf78dad839
                    Gitaccess.$fSelectorBlock5
                    0
                    ipv }) -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   $fToJSONBlock_$ctoJSON ::
     Gitaccess.Block -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S(LSLL),1*U(1*U(U),U,1*U(U),1*U(U))>m1,
@@ -1392,7 +1391,7 @@ a9d0e5cd0a4be1e4843f1ebf78dad839
                  case w of ww { Gitaccess.Block ww1 ww2 ww3 ww4 ->
                  case Gitaccess.$w$ctoJSON ww1 ww2 ww3 ww4 of ww5 { (##) ww6 ->
                  Data.Aeson.Types.Internal.Object ww6 } }) -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fToJSONCommits :: Data.Aeson.Types.Class.ToJSON Gitaccess.Commits
   DFunId[0]
   {- Arity: 1, Strictness: <S(LSS),1*U(1*U,U,U)>m1,
@@ -1402,17 +1401,17 @@ a9d0e5cd0a4be1e4843f1ebf78dad839
                   `cast`
                 (Sym (Data.Aeson.Types.Class.NTCo:ToJSON[0]
                           <Gitaccess.Commits>_N)) -}
-1f47f70c0cd776e923b27977b5e4a1ea
+eb33f63a1567ad9743585e6f7c5cf2a6
   $fToJSONCommits1 :: Data.Text.Internal.Text
   {- Unfolding: (GHC.ST.runSTRep
                    @ Data.Text.Internal.Text
                    Gitaccess.$fToJSONCommits2) -}
-01332c36eb05d78aae447e6f4954ecd6
+0b1670a2d850f1b34acd05329143cc06
   $fToJSONCommits10 :: Data.Text.Internal.Text
   {- Unfolding: (GHC.ST.runSTRep
                    @ Data.Text.Internal.Text
                    Gitaccess.$fToJSONCommits11) -}
-c875b78f72afd355feb2f9fde4e1410e
+dadca884c9e59665ddc07c5f323a948f
   $fToJSONCommits11 ::
     GHC.Prim.State# s1
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
@@ -1426,7 +1425,7 @@ c875b78f72afd355feb2f9fde4e1410e
                    Gitaccess.$fSelectorCommits2
                    0
                    ipv }) -}
-d717253ed15d29a4aea192a7ea939050
+39251f3d1d085da880d6cfc34dca6d30
   $fToJSONCommits12 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -1436,7 +1435,7 @@ d717253ed15d29a4aea192a7ea939050
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
      Inline: [0] -}
-161e71aff01b473511c15bc617020a46
+fd9346ea42e97d2dd7eb9d6e33b83c96
   $fToJSONCommits2 ::
     GHC.Prim.State# s1
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
@@ -1450,7 +1449,7 @@ d717253ed15d29a4aea192a7ea939050
                    Gitaccess.$fSelectorCommits4
                    0
                    ipv }) -}
-a673dc18d4979ec07e1ef95e324fbdef
+49160bfd5ac67a2724d20738ec45a023
   $fToJSONCommits3 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -1460,12 +1459,12 @@ a673dc18d4979ec07e1ef95e324fbdef
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
      Inline: [0] -}
-e6930bbfe75575aa91b20a99f1d248bc
+d2147ac6b494164715e40f0441b529f0
   $fToJSONCommits4 :: Data.Text.Internal.Text
   {- Unfolding: (GHC.ST.runSTRep
                    @ Data.Text.Internal.Text
                    Gitaccess.$fToJSONCommits5) -}
-e6e1aef093bf125e6bb02ec3f61ebdae
+60bac4b49a9360ec67348ffd70a3f369
   $fToJSONCommits5 ::
     GHC.Prim.State# s1
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
@@ -1479,7 +1478,7 @@ e6e1aef093bf125e6bb02ec3f61ebdae
                    Gitaccess.$fSelectorCommits3
                    0
                    ipv }) -}
-dbf510178faef86fb5383c1dadb07bd9
+ea25448ff6a8eb2ecc653f7bbd3682db
   $fToJSONCommits6 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -1489,7 +1488,7 @@ dbf510178faef86fb5383c1dadb07bd9
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
      Inline: [0] -}
-8e25314f6ae331edbb205a00f7b3131d
+57905b8fa4c43be230e4474e64d02cad
   $fToJSONCommits7 ::
     [Gitaccess.Block] -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S,1*U>m2, Inline: INLINE[0],
@@ -1497,10 +1496,10 @@ dbf510178faef86fb5383c1dadb07bd9
                 (\ w :: [Gitaccess.Block] ->
                  case Gitaccess.$wa w of ww { (##) ww1 ->
                  Data.Aeson.Types.Internal.Array ww1 }) -}
-6ee63d1327f37aea066f45d8b16d4c43
+be4fe53193d4f9f4bf2d4887f4689bfd
   $fToJSONCommits8 :: GHC.Types.Int
   {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0) -}
-e9afd7f9dda0546f06b96f505d28ead9
+d5751a47774f226a28ee2eee7ddbfc67
   $fToJSONCommits9 ::
     Data.Vector.Fusion.Stream.Monadic.SPEC
     -> (Data.Vector.Generic.Base.Mutable
@@ -1517,7 +1516,7 @@ e9afd7f9dda0546f06b96f505d28ead9
              Data.Aeson.Types.Internal.Value,
            GHC.Types.Int) #)
   {- Arity: 4, Strictness: <S,1*U><L,U(U(U,U,U),U(U))><S,1*U><L,U> -}
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   $fToJSONCommits_$ctoJSON ::
     Gitaccess.Commits -> Data.Aeson.Types.Internal.Value
   {- Arity: 1, Strictness: <S(LSS),1*U(1*U,U,U)>m1,
@@ -1527,7 +1526,7 @@ e9afd7f9dda0546f06b96f505d28ead9
                  case w of ww { Gitaccess.Commits ww1 ww2 ww3 ->
                  case Gitaccess.$w$ctoJSON1 ww1 ww2 ww3 of ww4 { (##) ww5 ->
                  Data.Aeson.Types.Internal.Object ww5 } }) -}
-2068c1ac305c493dd4a406bbf609105d
+c18e4ab98f78dfff5c957d422c19487e
   $s$gdmparseJSON29 ::
     Data.Aeson.Types.Internal.Failure f r
     -> Data.Aeson.Types.Internal.Success [Gitaccess.Block] f r -> f r
@@ -1538,10 +1537,10 @@ e9afd7f9dda0546f06b96f505d28ead9
                    _kf :: Data.Aeson.Types.Internal.Failure f r
                    ks :: Data.Aeson.Types.Internal.Success [Gitaccess.Block] f r ->
                  ks (GHC.Types.[] @ Gitaccess.Block)) -}
-2d7fbe4d2a6f7e4286fa098fe5fb0d0a
+b1fd33089378180cca8ba79af2cd7ca1
   $s$gdmparseJSON30 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "[a]"#) -}
-11a4b28e1e2c6b82c899fb14198fb103
+139d361260193e80059c410e34c69c13
   $w$cshowsPrec ::
     GHC.Prim.Int#
     -> GHC.Types.Int
@@ -1633,7 +1632,7 @@ e9afd7f9dda0546f06b96f505d28ead9
                            @ GHC.Types.Char
                            Gitaccess.$fShowBlock2
                            (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))) }) -}
-a465e225f3f9d56486c8bb9457635672
+57905b8fa4c43be230e4474e64d02cad
   $w$cshowsPrec1 ::
     GHC.Prim.Int#
     -> [Gitaccess.Block]
@@ -1648,7 +1647,7 @@ a465e225f3f9d56486c8bb9457635672
   {- Arity: 9,
      Strictness: <L,U><L,1*U><L,U><L,U><L,U><L,U><L,U><L,U><L,U>,
      Inline: [0] -}
-b6407e4dfee0a910f8594febdf311135
+db52f085b9042fb852a19ba9e434beb7
   $w$ctoJSON ::
     GHC.Types.Int
     -> Data.Text.Internal.Text
@@ -1692,7 +1691,7 @@ b6407e4dfee0a910f8594febdf311135
                            @ Data.Text.Internal.Text
                            @ Data.Aeson.Types.Internal.Value) of dt { DEFAULT ->
                  (# dt #) }) -}
-917575211c95b7d67b1730e3dbea6bf7
+57905b8fa4c43be230e4474e64d02cad
   $w$ctoJSON1 ::
     [Gitaccess.Block]
     -> Data.Text.Internal.Text
@@ -1718,7 +1717,7 @@ b6407e4dfee0a910f8594febdf311135
                            @ Data.Text.Internal.Text
                            @ Data.Aeson.Types.Internal.Value) of dt { DEFAULT ->
                  (# dt #) }) -}
-6a653592c991ed5731f21f2a19565526
+57905b8fa4c43be230e4474e64d02cad
   $wa :: [Gitaccess.Block] -> (# Data.Aeson.Types.Internal.Array #)
   {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
      Unfolding: (\ w :: [Gitaccess.Block] ->
@@ -1786,7 +1785,7 @@ b6407e4dfee0a910f8594febdf311135
                               dt6
                               ipv3 #) } } } } } }) of dt { Data.Vector.Vector ipv ipv1 ipv2 ->
                  (# dt #) }) -}
-6c031e3511bb3e64e983cbb906b76a16
+63320e2f783d94acad9a0681c65c4219
   $wa1 ::
     GHC.Prim.Int#
     -> GHC.Prim.Int#
@@ -1983,35 +1982,35 @@ b6407e4dfee0a910f8594febdf311135
                                     <[Gitaccess.Block]>_R)) }
                  } in
                  $wgo 0) -}
-033bc2324ba17e4a86bee7cc797f8836
+ee7dc323cae0c626db86a7e77533f42b
   $wa2 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld,
           GHC.Integer.Type.Integer #)
   {- Arity: 1, Strictness: <B,A>b, Inline: [0] -}
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   data Block
     = Block {complexity :: GHC.Types.Int,
              name :: !Data.Text.Internal.Text,
              lineno :: GHC.Types.Int,
              col :: GHC.Types.Int}
-2cd4d38335a133b86f95dace3c9ee7a9
+1f53ee760dcca1ee8254bf6c83692e15
   abstract(True) C1_0Block
-7e4f5a4bcf1aa2cb2f2bc599607d09a7
+72137a5bec21eaa6fe3885282929eb9f
   abstract(True) C1_0Commits
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   data Commits
     = Commits {blocks :: [Gitaccess.Block],
                path :: !Data.Text.Internal.Text,
                types :: !Data.Text.Internal.Text}
-65a4650dc002094f89bdcede7741533b
+a85a7adf28c581a50ee742d161e355cf
   abstract(True) D1Block
-f659fd677cb7b0ba41f35b0e4443d845
+6cd593076ca4ee4004b26c014d5e9725
   abstract(True) D1Commits
-9040ad4aaa5dcc0827b0cdc2278a06cd
+dbf0583c1cc47e54c282e9e5c3e7c5e5
   data ListCommits = ListCommits
     Promotable
-06021f2bc0a9e359ae678abbb8bd86cf
+57905b8fa4c43be230e4474e64d02cad
   axiom Rep_Block::
       GHC.Generics.Rep Gitaccess.Block
         = GHC.Generics.D1
@@ -2028,7 +2027,7 @@ f659fd677cb7b0ba41f35b0e4443d845
                                   GHC.Generics.:*: GHC.Generics.S1
                                                      Gitaccess.S1_0_3Block
                                                      (GHC.Generics.Rec0 GHC.Types.Int))))
-730bfb79ed57ff2c88e324154d7c317c
+57905b8fa4c43be230e4474e64d02cad
   axiom Rep_Commits::
       GHC.Generics.Rep Gitaccess.Commits
         = GHC.Generics.D1
@@ -2043,28 +2042,28 @@ f659fd677cb7b0ba41f35b0e4443d845
                                   GHC.Generics.:*: GHC.Generics.S1
                                                      Gitaccess.S1_0_2Commits
                                                      (GHC.Generics.Rec0 Data.Text.Internal.Text))))
-bf9db8d73dcb3d9d45cb47e020f2697f
+7ae1ffa43ef7648e57adc59bb0ae8f4d
   abstract(True) S1_0_0Block
-759b54794882bc178292f82d59d2265f
+87d15a65e974c88e7b5cb35f9599a59f
   abstract(True) S1_0_0Commits
-83809dcc3c15296d9e678d310757396f
+03d3ed6e10fe8aeccd3d36399f50576c
   abstract(True) S1_0_1Block
-e002885b3cbf48b8b0328e4bcb377cc4
+2594e00734cef42a5fb6863b47b71f9d
   abstract(True) S1_0_1Commits
-d1ffe9a7a55b989494a8abca7aed03d3
+decb7a7cdfd5054b15748392be5fa403
   abstract(True) S1_0_2Block
-730bfb79ed57ff2c88e324154d7c317c
+0e452657ce5d1b3eb76ceaa4e2766c16
   abstract(True) S1_0_2Commits
-06021f2bc0a9e359ae678abbb8bd86cf
+b78bd84fa49676e25e741bef10c1b087
   abstract(True) S1_0_3Block
-625a4c9697b5973a3384ce66ddf012f0
+cdb962829cb7f1b64e92b8b6e179c5a8
   blocks :: Gitaccess.Commits -> [Gitaccess.Block]
   RecSel Gitaccess.Commits
   {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(1*U,1*H,1*H)>,
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Gitaccess.Commits ->
                  case ds of wild { Gitaccess.Commits ds1 ds2 ds3 -> ds1 }) -}
-49f4e63aa9eb05cbfa910a7b74f1350a
+93b6a741b307e52763db8113528bab12
   col :: Gitaccess.Block -> GHC.Types.Int
   RecSel Gitaccess.Block
   {- Arity: 1, HasNoCafRefs,
@@ -2072,7 +2071,7 @@ d1ffe9a7a55b989494a8abca7aed03d3
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Gitaccess.Block ->
                  case ds of wild { Gitaccess.Block ds1 ds2 ds3 ds4 -> ds4 }) -}
-ed9f4e4a0d2ca90a965ec880ce3b9053
+60dd11550fc2026fac9e777118ecb344
   complexity :: Gitaccess.Block -> GHC.Types.Int
   RecSel Gitaccess.Block
   {- Arity: 1, HasNoCafRefs,
@@ -2080,7 +2079,7 @@ ed9f4e4a0d2ca90a965ec880ce3b9053
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Gitaccess.Block ->
                  case ds of wild { Gitaccess.Block ds1 ds2 ds3 ds4 -> ds1 }) -}
-2ad7bd11099314fd15250b8953478528
+f436845f900c1df94b7e2380441fd309
   formatCommit :: GitHub.Data.GitData.Commit -> GHC.Base.String
   {- Arity: 1,
      Strictness: <L,1*U(U(U,U,U),1*H,1*H,1*H,1*H,1*H,1*H,1*H)>,
@@ -2091,7 +2090,7 @@ ed9f4e4a0d2ca90a965ec880ce3b9053
                    0
                    (GitHub.Data.GitData.commitSha commit)
                    (GHC.Types.[] @ GHC.Types.Char)) -}
-6910be837ca60fb073d8dab4d0b58f53
+b0c3bd398e4ce1d0b337943831167e00
   getCommit :: GHC.Base.String -> GHC.Types.IO GHC.Base.String
   {- Arity: 2, Strictness: <L,U><L,U>,
      Unfolding: InlineRule (0, True, True)
@@ -2099,7 +2098,7 @@ ed9f4e4a0d2ca90a965ec880ce3b9053
                   `cast`
                 (<GHC.Base.String>_R
                  ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)) -}
-bbccbf0b45337e3ed0a56ea0ec07c46d
+973fcdd9adc851b1d95ca94006e31837
   getCommit1 ::
     GHC.Base.String
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2132,33 +2131,33 @@ bbccbf0b45337e3ed0a56ea0ec07c46d
                       GHC.Types.False)
                    (GHC.Types.[] @ GHC.Types.Char)
                    eta) -}
-0d862ed123b6169519da4595b8802276
+fd937a5e8f39d89804c0342498fa0f49
   getCommit2 :: GHC.Base.Maybe GHC.IO.FilePath
   {- Strictness: m2,
      Unfolding: (GHC.Base.Just
                    @ GHC.IO.FilePath
                    Gitaccess.getCommit3) -}
-3f66b09a5ac8d5f2fa83fab9e3c07576
+6b5bd9a4c3697a5e736c2a8d2939c547
   getCommit3 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "Distributed-file-system"#) -}
-c667ae075197fd40d2bf8e108eb73a5a
+9753e01fcd8d61eb0986319ff67b42e4
   getCommit4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "--hard"#) -}
-f875b87fe56532811529530b091d5e15
+7b6c7de305a9e74f6eaabcd3f397710e
   getCommit5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "reset"#) -}
-309c668d4ad8cfbb3ad1dc8c83bf0970
+66c42b671b215efb63522a467d0fa629
   getCommit6 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "git"#) -}
-0130a66ca8973fd9daddcf173bf6989d
+8361a8d8db6b81b3e434bf38bf99217f
   getCommitList :: GHC.Types.IO [GHC.Base.String]
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Gitaccess.getCommitList1
                   `cast`
                 (Sym (GHC.Types.NTCo:IO[0] <[GHC.Base.String]>_R)) -}
-4472bd67b76dd119a68731e032cfb63f
+a4b58c4427adf7aeca34c41cbe4fb0e1
   getCommitList1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Base.String] #)
@@ -2308,20 +2307,20 @@ f875b87fe56532811529530b091d5e15
                            `cast`
                          (Data.Vector.Fusion.Util.NTCo:Id[0]
                               <[[GHC.Types.Char]]>_R) } #) } }) -}
-b4c7e5df75d31dcb819c02b6b7581261
+20fbf544716b3eb164929a32f0440c9a
   getCommitList10 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Gitaccess.getCommitList11
                    GitHub.Endpoints.Repos.Commits.commitsWithOptionsForR9) -}
-9396f853bb7ca953bdfec703ba40cbb1
+c296ddbb04ae7a98ed946f82d8089241
   getCommitList11 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString#
                    "Distributed-file-system"#) -}
-4f0056751214bd2c3fb8413b51324660
+3305ed6ffe35fcacea6fadb9c1bd6396
   getCommitList12 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "Hughlav"#) -}
-77ba6e7e67dc6f6588108ee54adb4dcf
+0882ba694678dbfd3943e7cbf99fc112
   getCommitList2 ::
     Data.Text.Array.MArray s1
     -> GHC.Types.Int
@@ -2331,19 +2330,19 @@ b4c7e5df75d31dcb819c02b6b7581261
     -> (# GHC.Prim.State# s1, Data.Text.Internal.Text #)
   {- Arity: 5, Strictness: <L,U(U)><L,U(U)><S,1*U><L,U><L,U>,
      Inline: [0] -}
-f9d8cb2a2c3fffc8ef86809e2b78641a
+fe64c632d0d60fd7968f0dd91f89b2fc
   getCommitList3 :: Data.Text.Internal.Text
   {- Unfolding: (Data.Text.Show.unpackCString# "\""#) -}
-6db9fe6cfb87bcd28b73c4c1ff145fe4
+a66c4a5a0070085ecfce10bf23dcc668
   getCommitList4 :: [GHC.Base.String]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Base.String
                    Gitaccess.getCommitList5
                    (GHC.Types.[] @ GHC.Base.String)) -}
-ceed9cbb62aaad6e65d9421e0e869095
+98b6676018053fb6b418493981f18dde
   getCommitList5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# " "#) -}
-21e600b11283081a36cc92c1096f23da
+9c0b0b7180bb4fbf38ca3dbd32aedc28
   getCommitList6 ::
     GitHub.Data.Request.Request
       'GitHub.Data.Request.RO
@@ -2356,7 +2355,7 @@ ceed9cbb62aaad6e65d9421e0e869095
                    (Sym (Data.Aeson.Types.Class.NTCo:FromJSON[0]
                              <Data.Vector.Vector GitHub.Data.GitData.Commit>_N))
                    Gitaccess.getCommitList7) -}
-f1a8f322cbaa0c0c8f7ab6cf36ff4746
+cfe12517a48f21caf8f72131ac2f30c5
   getCommitList7 ::
     GitHub.Data.Request.SimpleRequest
       'GitHub.Data.Request.RO
@@ -2371,24 +2370,24 @@ f1a8f322cbaa0c0c8f7ab6cf36ff4746
                       @ (Data.ByteString.Internal.ByteString,
                          GHC.Base.Maybe Data.ByteString.Internal.ByteString))
                    GitHub.Data.Request.FetchAll) -}
-a4d0da5258d9f82bd184c4c6487a0052
+0718834be883182efa50f79d120bedd7
   getCommitList8 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    GitHub.Endpoints.Repos.Commits.commitR2
                    Gitaccess.getCommitList9) -}
-4ee02672b0a7c5ce78a2c4f460761e71
+805b84e57a0eaf668240b66294be9c7b
   getCommitList9 :: [Data.Text.Internal.Text]
   {- Unfolding: (GHC.Types.:
                    @ Data.Text.Internal.Text
                    Gitaccess.getCommitList12
                    Gitaccess.getCommitList10) -}
-760e57ec4442797bcd90d1c00a25a42a
+eba227343f450a8c5545e560eb57ad79
   getRepo :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Gitaccess.getRepo1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-0757bfbc2eca24eeaa18f35c70b07a14
+5e3207fb8a2f481b4fd82527cba0c5fc
   getRepo1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -2397,46 +2396,37 @@ a4d0da5258d9f82bd184c4c6487a0052
                  case GHC.Prim.catch#
                         @ GHC.Types.Bool
                         @ GHC.Exception.SomeException
-                        Gitaccess.getRepo7
+                        Gitaccess.getRepo6
                         System.Directory.doesDirectoryExist2
                         s of ds1 { (#,#) ipv ipv1 ->
                  case ipv1 of wild {
                    GHC.Types.False
                    -> System.Process.callProcess1
                         Gitaccess.getCommit6
-                        Gitaccess.getRepo3
-                        ipv
-                   GHC.Types.True
-                   -> GHC.IO.Handle.Text.hPutStr2
-                        GHC.IO.Handle.FD.stdout
                         Gitaccess.getRepo2
-                        GHC.Types.True
-                        ipv } }) -}
-1bbe08e1854bb140d76f0e9317ea6884
-  getRepo2 :: [GHC.Types.Char]
-  {- Unfolding: (GHC.CString.unpackCString#
-                   "file exists already"#) -}
-539055c3d871d35cb30928ead93f4f3f
-  getRepo3 :: [GHC.Base.String]
-  {- Unfolding: (GHC.Types.:
-                   @ GHC.Base.String
-                   Gitaccess.getRepo6
-                   Gitaccess.getRepo4) -}
-74ec8b33c6f9a51af9cafe5fc991ff2a
-  getRepo4 :: [GHC.Base.String]
+                        ipv
+                   GHC.Types.True -> (# ipv, GHC.Tuple.() #) } }) -}
+2d316e354b65391b34007aa34bf3a7f2
+  getRepo2 :: [GHC.Base.String]
   {- Unfolding: (GHC.Types.:
                    @ GHC.Base.String
                    Gitaccess.getRepo5
+                   Gitaccess.getRepo3) -}
+28587bd95a5c5786f92297778b3cf09e
+  getRepo3 :: [GHC.Base.String]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Gitaccess.getRepo4
                    (GHC.Types.[] @ GHC.Base.String)) -}
-48861c53078a7855dcac0cc4fcfc1d49
-  getRepo5 :: [GHC.Types.Char]
+b8ca176d36d4396a5796053cffc13306
+  getRepo4 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "https://github.com/Hughlav/Distributed-file-system.git"#) -}
-8534c6cdaa65bdfa8c04125b825e2d55
-  getRepo6 :: [GHC.Types.Char]
+4a579effdc98f04ff9744b17878fe0c5
+  getRepo5 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "clone"#) -}
-df2e145bda567525fcbe70b461f391b8
-  getRepo7 ::
+eae8454d7584adf8e4189e67fabf72bf
+  getRepo6 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Bool #)
   {- Arity: 1,
@@ -2445,12 +2435,7 @@ df2e145bda567525fcbe70b461f391b8
                         Gitaccess.getCommit3
                         s of ds2 { (#,#) ipv ipv1 ->
                  (# ipv, System.Posix.Files.Common.isDirectory ipv1 #) }) -}
-36fc08fcb7603e168b1ab78530f0dfd7
-  initaliseWorker :: GHC.Types.IO ()
-  {- Arity: 1, Strictness: <L,U>,
-     Unfolding: InlineRule (0, True, True)
-                Gitaccess.getRepo1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-d7d3c0f84f1fe4d0b5a4e29cb786819b
+3a02bff06d6d926ebe4206d7b3b929fa
   lineno :: Gitaccess.Block -> GHC.Types.Int
   RecSel Gitaccess.Block
   {- Arity: 1, HasNoCafRefs,
@@ -2458,12 +2443,12 @@ d7d3c0f84f1fe4d0b5a4e29cb786819b
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Gitaccess.Block ->
                  case ds of wild { Gitaccess.Block ds1 ds2 ds3 ds4 -> ds3 }) -}
-12d7b4c5c55e888b77b280f2cd6d9601
+860026950c42285fabe47ca65c2568ea
   main :: GHC.Types.IO ()
   {- Arity: 1, Strictness: <L,U>,
      Unfolding: InlineRule (0, True, True)
                 Gitaccess.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
-2622402be8ac4c79600569b090b2acb5
+18947811c5e78bdb2b19f7b64804149c
   main1 ::
     GHC.Prim.State# GHC.Prim.RealWorld
     -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
@@ -2475,20 +2460,70 @@ d7d3c0f84f1fe4d0b5a4e29cb786819b
                         (GHC.Show.$fShow[]_$s$cshow2 ipv1)
                         GHC.Types.True
                         ipv of ds2 { (#,#) ipv2 ipv3 ->
-                 case Gitaccess.getRepo1 ipv2 of ds3 { (#,#) ipv4 ipv5 ->
-                 case Gitaccess.main3
-                        Gitaccess.main2
-                        ipv4 of ds4 { (#,#) ipv6 ipv7 ->
-                 GHC.IO.Handle.Text.hPutStr2
-                   GHC.IO.Handle.FD.stdout
-                   (GHC.Show.$fShowInteger_$cshow ipv7)
+                 case GHC.Prim.catch#
+                        @ GHC.Types.Bool
+                        @ GHC.Exception.SomeException
+                        Gitaccess.getRepo6
+                        System.Directory.doesDirectoryExist2
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case ipv5 of wild {
+                   GHC.Types.False
+                   -> case System.Process.callCommand8
+                             @ GHC.IO.Exception.ExitCode
+                             System.Process.callProcess3
+                             (System.Process.Internals.CreateProcess
+                                (System.Process.Internals.RawCommand
+                                   Gitaccess.getCommit6
+                                   Gitaccess.getRepo2)
+                                (GHC.Base.Nothing @ GHC.IO.FilePath)
+                                (GHC.Base.Nothing @ [(GHC.Base.String, GHC.Base.String)])
+                                System.Process.Internals.Inherit
+                                System.Process.Internals.Inherit
+                                System.Process.Internals.Inherit
+                                GHC.Types.False
+                                GHC.Types.False
+                                GHC.Types.True)
+                             System.Process.callCommand2
+                               `cast`
+                             (<GHC.Base.Maybe GHC.IO.Handle.Types.Handle>_R
+                              ->_R <GHC.Base.Maybe GHC.IO.Handle.Types.Handle>_R
+                              ->_R <GHC.Base.Maybe GHC.IO.Handle.Types.Handle>_R
+                              ->_R <System.Process.Internals.ProcessHandle>_R
+                              ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.IO.Exception.ExitCode>_R))
+                             ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                      case ipv7 of wild1 {
+                        GHC.IO.Exception.ExitSuccess
+                        -> case Gitaccess.main3
+                                  Gitaccess.main2
+                                  ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                           GHC.IO.Handle.Text.hPutStr2
+                             GHC.IO.Handle.FD.stdout
+                             (GHC.Show.$fShowInteger_$cshow ipv9)
+                             GHC.Types.True
+                             ipv8 }
+                        GHC.IO.Exception.ExitFailure r
+                        -> case r of ww { GHC.Types.I# ww1 ->
+                           System.Process.$wa
+                             @ ()
+                             System.Process.callProcess3
+                             Gitaccess.getCommit6
+                             Gitaccess.getRepo2
+                             ww1
+                             ipv6 } } }
                    GHC.Types.True
-                   ipv6 } } } }) -}
-e59f9f0447d6534d50760e88a05fbf50
+                   -> case Gitaccess.main3
+                             Gitaccess.main2
+                             ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                      GHC.IO.Handle.Text.hPutStr2
+                        GHC.IO.Handle.FD.stdout
+                        (GHC.Show.$fShowInteger_$cshow ipv7)
+                        GHC.Types.True
+                        ipv6 } } } } }) -}
+ef24d0a2fa34e05b0f9f6f14e975b28f
   main2 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
-                   "17c3794ecada6fa739e233b405b30112e1191f5b"#) -}
-d2c0d993ed38813dd582de9b8cabb37e
+                   "2470599e7205a9a3fcd544bfe7259f932ca0a68d"#) -}
+3561744e1cee633d504a23a73d4b2fc5
   main3 ::
     GHC.Base.String
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2497,36 +2532,90 @@ d2c0d993ed38813dd582de9b8cabb37e
   {- Arity: 2, Strictness: <L,U><L,U>,
      Unfolding: (\ commit :: GHC.Base.String
                    eta :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
-                 case Gitaccess.getRepo1 eta of ds1 { (#,#) ipv ipv1 ->
-                 case System.Process.readCreateProcess1
-                        (System.Process.Internals.CreateProcess
-                           (System.Process.Internals.RawCommand
-                              Gitaccess.getCommit6
-                              (GHC.Types.:
-                                 @ GHC.Base.String
-                                 Gitaccess.getCommit5
-                                 (GHC.Types.:
-                                    @ GHC.Base.String
-                                    Gitaccess.getCommit4
-                                    (GHC.Types.:
-                                       @ GHC.Base.String
-                                       commit
-                                       (GHC.Types.[] @ GHC.Base.String)))))
-                           Gitaccess.getCommit2
-                           (GHC.Base.Nothing @ [(GHC.Base.String, GHC.Base.String)])
-                           System.Process.Internals.Inherit
-                           System.Process.Internals.Inherit
-                           System.Process.Internals.Inherit
-                           GHC.Types.False
-                           GHC.Types.False
-                           GHC.Types.False)
-                        (GHC.Types.[] @ GHC.Types.Char)
-                        ipv of ds2 { (#,#) ipv2 ipv3 ->
-                 case Gitaccess.main6
-                        Gitaccess.getCommit3
-                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
-                 Gitaccess.main4 ipv5 ipv4 } } }) -}
-9ff362a976aaf789fe9c4bde66b71c5e
+                 case GHC.Prim.catch#
+                        @ GHC.Types.Bool
+                        @ GHC.Exception.SomeException
+                        Gitaccess.getRepo6
+                        System.Directory.doesDirectoryExist2
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 let {
+                   $j :: GHC.Prim.State# GHC.Prim.RealWorld
+                         -> ()
+                         -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                               GHC.Integer.Type.Integer #)
+                     {- Arity: 2 -}
+                   = \ ipv2 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot]
+                       ipv3 :: ()[OneShot] ->
+                     case System.Process.readCreateProcess1
+                            (System.Process.Internals.CreateProcess
+                               (System.Process.Internals.RawCommand
+                                  Gitaccess.getCommit6
+                                  (GHC.Types.:
+                                     @ GHC.Base.String
+                                     Gitaccess.getCommit5
+                                     (GHC.Types.:
+                                        @ GHC.Base.String
+                                        Gitaccess.getCommit4
+                                        (GHC.Types.:
+                                           @ GHC.Base.String
+                                           commit
+                                           (GHC.Types.[] @ GHC.Base.String)))))
+                               Gitaccess.getCommit2
+                               (GHC.Base.Nothing @ [(GHC.Base.String, GHC.Base.String)])
+                               System.Process.Internals.Inherit
+                               System.Process.Internals.Inherit
+                               System.Process.Internals.Inherit
+                               GHC.Types.False
+                               GHC.Types.False
+                               GHC.Types.False)
+                            (GHC.Types.[] @ GHC.Types.Char)
+                            ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                     case Gitaccess.main6
+                            Gitaccess.getCommit3
+                            ipv4 of ds3 { (#,#) ipv6 ipv7 ->
+                     Gitaccess.main4 ipv7 ipv6 } }
+                 } in
+                 case ipv1 of wild {
+                   GHC.Types.False
+                   -> case System.Process.callCommand8
+                             @ GHC.IO.Exception.ExitCode
+                             System.Process.callProcess3
+                             (System.Process.Internals.CreateProcess
+                                (System.Process.Internals.RawCommand
+                                   Gitaccess.getCommit6
+                                   Gitaccess.getRepo2)
+                                (GHC.Base.Nothing @ GHC.IO.FilePath)
+                                (GHC.Base.Nothing @ [(GHC.Base.String, GHC.Base.String)])
+                                System.Process.Internals.Inherit
+                                System.Process.Internals.Inherit
+                                System.Process.Internals.Inherit
+                                GHC.Types.False
+                                GHC.Types.False
+                                GHC.Types.True)
+                             System.Process.callCommand2
+                               `cast`
+                             (<GHC.Base.Maybe GHC.IO.Handle.Types.Handle>_R
+                              ->_R <GHC.Base.Maybe GHC.IO.Handle.Types.Handle>_R
+                              ->_R <GHC.Base.Maybe GHC.IO.Handle.Types.Handle>_R
+                              ->_R <System.Process.Internals.ProcessHandle>_R
+                              ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.IO.Exception.ExitCode>_R))
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case ipv3 of wild1 {
+                        GHC.IO.Exception.ExitSuccess -> $j ipv2 GHC.Tuple.()
+                        GHC.IO.Exception.ExitFailure r
+                        -> case r of ww { GHC.Types.I# ww1 ->
+                           case System.Process.$wa
+                                  @ ()
+                                  System.Process.callProcess3
+                                  Gitaccess.getCommit6
+                                  Gitaccess.getRepo2
+                                  ww1
+                                  ipv2
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                     GHC.Integer.Type.Integer #)
+                           of {} } } }
+                   GHC.Types.True -> $j ipv GHC.Tuple.() } }) -}
+921c73b70ebf80d41c8af75d1cfec382
   main4 ::
     GHC.Base.String
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2539,10 +2628,10 @@ d2c0d993ed38813dd582de9b8cabb37e
                     Gitaccess.main_go
                       (Data.OldList.lines result)
                       Gitaccess.main5 #)) -}
-eda09e850b13ec3aca5d9361aff5b8cf
+8221e6051e0f1a74d125b964b6651b1b
   main5 :: GHC.Integer.Type.Integer
   {- HasNoCafRefs, Unfolding: (__integer 0) -}
-75448be18f6906ec11c21674baf6c08d
+c1c74bb92a758ac8976b93df8161c3c6
   main6 ::
     GHC.Base.String
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2584,19 +2673,19 @@ eda09e850b13ec3aca5d9361aff5b8cf
                    -> case procHandle of ww { System.Process.Internals.ProcessHandle ww1 ww2 ->
                       case System.Process.$wa1 ww1 ww2 ipv6 of ds9 { (#,#) ipv11 ipv12 ->
                       GHC.IO.Handle.Text.hGetContents1 out ipv11 } } } } } } } }) -}
-93cd30d4bac53613220a369fc9ce83e9
+5eaf4495f88a8f5a4b233821baf986d5
   main7 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString#
                    "Pattern match failure in do expression at src/Gitaccess.hs:129:5-31"#) -}
-cada10a52eb8fae441182735c938e393
+a724c1c3c4eadf2d095a9bee0aa8ff87
   main8 :: [GHC.Types.Char]
   {- Unfolding: (GHC.CString.unpackCString# "stack"#) -}
-7db7f4009f2b022c448ad31c2601c5f5
+4412aad43114915b05cb0f78c0a25184
   main_go ::
     [[GHC.Types.Char]]
     -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
   {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
-bc5c25419b827720bf120cc3497f6ace
+0d1ff26055459eb3d137900eac6abad5
   name :: Gitaccess.Block -> Data.Text.Internal.Text
   RecSel Gitaccess.Block
   {- Arity: 1, HasNoCafRefs,
@@ -2604,7 +2693,7 @@ bc5c25419b827720bf120cc3497f6ace
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Gitaccess.Block ->
                  case ds of wild { Gitaccess.Block ds1 ds2 ds3 ds4 -> ds2 }) -}
-5cf594cbac57361187f4d6e511f8c7fb
+dc62a6a6840f219d3b730f880c7f5a34
   numCommits :: [GHC.Base.String] -> GHC.Types.IO GHC.Types.Int
   {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><L,U>,
      Unfolding: InlineRule (0, True, True)
@@ -2612,7 +2701,7 @@ bc5c25419b827720bf120cc3497f6ace
                   `cast`
                 (<[GHC.Base.String]>_R
                  ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Types.Int>_R)) -}
-57b2c6fb82bdbfe4029e39d23784fcbe
+ac4721eac1aaeee76de85dddde562360
   numCommits1 ::
     [GHC.Base.String]
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2627,10 +2716,10 @@ bc5c25419b827720bf120cc3497f6ace
                            commits
                            0 of ww2 { DEFAULT ->
                     GHC.Types.I# ww2 } #)) -}
-82c9eb07ed3314c57c033a7c93255f64
+0d8fb18bf7c2917d7a3a1aeff22ae784
   parseString :: [GHC.Types.Char] -> [GHC.Types.Char]
   {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
-0a3a52ef98cb729cfae095bfbd39531f
+ab55ec6db7257d087b0167382d135ae2
   path :: Gitaccess.Commits -> Data.Text.Internal.Text
   RecSel Gitaccess.Commits
   {- Arity: 1, HasNoCafRefs,
@@ -2638,13 +2727,13 @@ bc5c25419b827720bf120cc3497f6ace
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Gitaccess.Commits ->
                  case ds of wild { Gitaccess.Commits ds1 ds2 ds3 -> ds2 }) -}
-9c057e10f75e85aca6be916e7b4f841a
+19fb5be7f3f9e1b1e78dc24a6a934577
   repository :: GitHub.Data.Name.Name GitHub.Data.Repos.Repo
   {- Unfolding: InlineRule (0, True, True)
                 Gitaccess.getCommitList11
                   `cast`
                 (Sym (GitHub.Data.Name.NTCo:Name[0] <GitHub.Data.Repos.Repo>_P)) -}
-f160e0582cd4c6251dd209559671a123
+4790f3bd696b26fb9e6302ca38a04a21
   returnComplex ::
     GHC.Base.String -> GHC.Types.IO GHC.Integer.Type.Integer
   {- Arity: 2, Strictness: <S,1*U><L,U>,
@@ -2653,7 +2742,7 @@ f160e0582cd4c6251dd209559671a123
                   `cast`
                 (<GHC.Base.String>_R
                  ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)) -}
-da6374f1298e274a2415f9ee647c2af9
+c49f76bae6df681621ace429f858a338
   returnComplex1 ::
     GHC.Base.String
     -> GHC.Prim.State# GHC.Prim.RealWorld
@@ -2688,14 +2777,24 @@ da6374f1298e274a2415f9ee647c2af9
                                                -> case ds7 of wild6 {
                                                     [] -> x
                                                     : ipv ipv1 -> Gitaccess.returnComplex2 } } #)
-                                       : ipv ipv1 -> Gitaccess.$wa2 eta } } } } }) -}
-ce48b7a7f93f3ad25b9684202cb5a7fb
+                                       : ds7 ds8
+                                       -> case ds8 of wild5 {
+                                            [] -> Gitaccess.$wa2 eta
+                                            : ds9 ds10
+                                            -> case ds10 of wild6 {
+                                                 [] -> Gitaccess.$wa2 eta
+                                                 : ds11 ds12
+                                                 -> case ds12 of wild7 {
+                                                      [] -> (# eta, Gitaccess.main5 #)
+                                                      : ipv ipv1
+                                                      -> Gitaccess.$wa2 eta } } } } } } } }) -}
+de477a350e2b90cbbe04bfe75f027c76
   returnComplex2 :: GHC.Integer.Type.Integer
   {- Strictness: b -}
-1656f3c59dc0bc83caf9c27ea53a6301
+21c5ede1679d60f24b7a7dbfbec1d215
   returnComplex3 :: GHC.Integer.Type.Integer
   {- Strictness: b -}
-4928db6d677adef4c080a6a6f4f2b47a
+6349ba88a384f825c354fe87424e1dcb
   returnComplex4 ::
     Text.ParserCombinators.ReadP.P GHC.Integer.Type.Integer
   {- Unfolding: ((GHC.Read.$fReadInteger3
@@ -2706,7 +2805,7 @@ ce48b7a7f93f3ad25b9684202cb5a7fb
                       <GHC.Integer.Type.Integer>_R)
                    @ GHC.Integer.Type.Integer
                    (Text.Read.readEither5 @ GHC.Integer.Type.Integer)) -}
-4a3b4fa9b66a3be180e4340cc70cc367
+7bd5f8b4674eec70f7cacc7e8ffcf01b
   runArgon :: GHC.Base.String -> GHC.Types.IO GHC.Base.String
   {- Arity: 2, Strictness: <L,U><L,U>,
      Unfolding: InlineRule (0, True, True)
@@ -2714,7 +2813,7 @@ ce48b7a7f93f3ad25b9684202cb5a7fb
                   `cast`
                 (<GHC.Base.String>_R
                  ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Base.String>_R)) -}
-5ecad19cb7570749bcffaf9215a3f40c
+e57d415a09da7b2cbcf623db8b90d8f3
   sumComplexity ::
     GHC.Base.String -> GHC.Types.IO GHC.Integer.Type.Integer
   {- Arity: 2, Strictness: <L,1*U><L,U>,
@@ -2723,7 +2822,7 @@ ce48b7a7f93f3ad25b9684202cb5a7fb
                   `cast`
                 (<GHC.Base.String>_R
                  ->_R Sym (GHC.Types.NTCo:IO[0] <GHC.Integer.Type.Integer>_R)) -}
-8428a434994d38b8c33ca2fdcfdd5095
+9424d4c9b09bb5333b4351c10a125f66
   types :: Gitaccess.Commits -> Data.Text.Internal.Text
   RecSel Gitaccess.Commits
   {- Arity: 1, HasNoCafRefs,
@@ -2731,7 +2830,7 @@ ce48b7a7f93f3ad25b9684202cb5a7fb
      Unfolding: InlineRule (1, True, False)
                 (\ ds :: Gitaccess.Commits ->
                  case ds of wild { Gitaccess.Commits ds1 ds2 ds3 -> ds3 }) -}
-3731a533a47e774c3bad6d9a4832dd42
+a06248a4e8ddb92f13c069ee6ded64e2
   workerWork ::
     GHC.Base.String -> GHC.Types.IO GHC.Integer.Type.Integer
   {- Arity: 2, Strictness: <L,U><L,U>,
