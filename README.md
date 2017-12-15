@@ -6,7 +6,7 @@ This is for TCD module CS4400 taught by Stephen Barrett. This project impliments
 
 The manager get the commit list for a repository. Upon statrup Workers clone the repository. The worker distributes shas corresponding to a particular committ as the workers ask for work. The worker sets the repository to the commit, uses argon the get the cyclomatic complexity of the files and then sums them and sends them back. The manager sums the complexity and returns the complexity along with the time taken to calculate the complexity.
 
-For running call
+For running locally call
 
 ```
 stack exec use-cloudhaskell-exe worker localhost 8000
