@@ -24,5 +24,6 @@ When workers are running on multiple nodes, they work fine. Locally due to the f
 
 ![alt text](https://ibb.co/hkGNs6)
 
+https://ibb.co/hkGNs6
 
 I used aws to host the workers. The First data point at 1 was running locall, the second for one node on an aws server.
